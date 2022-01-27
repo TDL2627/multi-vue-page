@@ -5,7 +5,7 @@
 
   <div class="home">
   
-
+<img src="../assets/people/me.png" alt="me">
   </div>
 </template>
 
@@ -22,6 +22,10 @@ export default {
 }
 </script>
 <style  scoped>
+.home{
+background-color: #9d4edd;
+height: 95vh;
+}
 h1{
   color:white;
   margin-top:15%;
@@ -32,6 +36,7 @@ h1{
   height: 100vh;
   width: 100vw;
   position: fixed;
+  z-index: 2334;
   top: 0;
   left: 0;
     animation: hide 1s linear 2s 1 forwards;
@@ -42,5 +47,15 @@ h1{
     z-index: -444;
         opacity: 0;
     }
+}
+
+@keyframes myAnim {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  100% {
+    background-position: 100% 50%;
+  }
 }
 </style>
