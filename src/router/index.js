@@ -7,7 +7,9 @@ import Projects from '../views/Projects.vue';
 import Skills from '../views/Skills.vue';
 import Testimonials from '../views/Testimonials.vue';
 
+
 const routes = [
+
   {
     path: '/',
     name: 'Home',
