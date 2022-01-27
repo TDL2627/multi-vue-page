@@ -1,5 +1,5 @@
 <template>
-  <h1>This is the skils</h1>
+  <h1>This is the skills</h1>
 </template>
 
 <script>
