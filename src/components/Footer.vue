@@ -16,7 +16,7 @@ export default {
     width: 100%;
     position: fixed;
     bottom: 0;
-    border-top-left-radius: 250px;
+    border-top-left-radius: 150px;
     height: 60px;
     background-color: #240046 !important;
 }
