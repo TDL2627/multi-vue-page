@@ -15,6 +15,7 @@ export default {
 #footer{
     width: 100%;
     position: fixed;
+    z-index: 10000;
     bottom: 0;
     border-top-left-radius: 150px;
     height: 60px;

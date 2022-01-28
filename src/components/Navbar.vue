@@ -53,6 +53,7 @@ export default {
   position: fixed;
   border-bottom-right-radius: 250px;
   top: 0;
+  z-index: 100000;
 }
 ul{
   margin-left:25%;
@@ -65,8 +66,6 @@ a{
 }
 a:hover{
   color: #ff7900;
-   -webkit-box-shadow: 12px 8px 15px 1px #E0AAFF; 
-box-shadow: 12px 8px 15px 1px #E0AAFF;
 }
 .nav-item{
   margin: 10px;
@@ -77,6 +76,7 @@ box-shadow: 12px 8px 15px 1px #E0AAFF;
 
 a.router-link-exact-active {
   color: #ff7900;
-
+font-weight: bold;
+text-decoration: underline ;
 }
 </style>

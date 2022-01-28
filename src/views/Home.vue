@@ -108,7 +108,7 @@ h1{
   height: 100vh;
   width: 100vw;
   position: fixed;
-  z-index: 2334;
+  z-index: 23379687384;
   top: 0;
   left: 0;
     animation: hide 1s linear 1s 1 forwards;

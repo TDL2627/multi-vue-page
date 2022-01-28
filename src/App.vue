@@ -26,6 +26,9 @@ export default {
   text-align: center;
 
 }
+* {
+  font-family: "Comfortaa" !important;
+}
 
 
 </style>

@@ -1,23 +1,34 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+
+    <h1>About</h1>
+<div id="ab1">
+<h3>Description</h3>
+<div id="text">
+
+
+<p>
+  I am a smart, hard working person and very eager to learn.I love solving problems, I am accustomed to traveling alot and speak multiple languages which allows me to mix and work well with others.I am very passionate about everything I do and take pride in what I do.
+</p>
+<br>
+<p>
+  I have 2 years of coding experience which I have acquired via self-learning, tertiary institutions and multiple work enviroments.I find coding very interesting and beleive it is my super power.
+</p>
+<br>
+<p>
+  I am well experienced in coding and able to work well with others.
+</p>
+</div>
+</div>
+<div id="ab2">
+<h3>Details</h3>
+<p>
+  
+</p>
+</div>
   </div>
 
-  <div id="c1">
 
-  </div>
-
-  <div id="c2">
-
-  </div>
-
-  <div id="c3">
-
-  </div>
-  <div id="c4">
-
-  </div>
-  <div id="c5"></div>
 </template>
 
 <script>
@@ -27,9 +38,51 @@ export default {
 </script>
 
 <style scoped>
-div{
-  height: 50px;
+h3{
+  padding-top: 20%;
+  color: white;
+  text-decoration: underline #ff7900;
 }
+h1{
+  z-index: 27;
+  padding-top:5% ;
+  position: fixed;
+  margin-bottom: 5px;
+  left:45.6%;
+  color: #ff7900;
+  text-decoration: underline 2px white ;
+}
+#text{
+  padding:20px;
+  padding-top: 50px;
+}
+#ab1{
+  width: 50%;
+  height: 100vh;
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  background-color: #5a189a;
+}
+#ab2{
+  width: 50%;
+  height: 100vh;
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  right: 0;
+  background-color: #3c096c;
+}
+p{
+  color: white;
+  text-align: start;
+}
+
+
+
+
+
+
 #c1{
   background-color: #3c096c;
 }
