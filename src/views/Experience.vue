@@ -56,13 +56,14 @@ export default {
 
 <style scoped>
 h1{
-  padding-top:6% ;
+  padding-top:8% ;
   color: #ff7900;
   text-decoration: underline 2px white ;
 }
 #exp{
-  height: 95vh;
- margin-top:-17px;
+  height: 100vh;
+ margin-top: -35px;
+
     background-color: #5a189a
 }
 .time-line-box {
