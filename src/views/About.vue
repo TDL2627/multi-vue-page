@@ -4,7 +4,7 @@
     <h1>About</h1>
 <div id="ab1">
 <h3>Description</h3>
-<div id="text">
+<div class="text">
 
 
 <p>
@@ -18,13 +18,44 @@
 <p>
   I am well experienced in coding and able to work well with others.
 </p>
-</div>
+
 </div>
 <div id="ab2">
 <h3>Details</h3>
-<p>
-  
-</p>
+<div class="container">
+<div class="row">
+<div class="col-4">
+<p>NAME   :</p> 
+<br>
+<p>SURNAME:</p>
+<br>
+<p>EMAIL  :</p>
+<br>
+<p>AGE    :</p>
+<br>
+<p>FROM   :</p>
+
+</div>
+
+
+
+<div class="col-8">
+<p>Abdul-Malik</p>
+<br>
+<p>Kannemeyer</p>
+<br>
+<p>ashleykannemeyer2@gmail.com</p>
+<br>
+<p>21</p>
+<br>
+<p>Cape Town</p>
+</div>
+
+
+</div>
+</div>
+
+</div>
 </div>
   </div>
 
@@ -52,8 +83,12 @@ h1{
   color: #ff7900;
   text-decoration: underline 2px white ;
 }
-#text{
+.text{
   padding:20px;
+  padding-top: 50px;
+}
+.container{
+    padding:20px;
   padding-top: 50px;
 }
 #ab1{

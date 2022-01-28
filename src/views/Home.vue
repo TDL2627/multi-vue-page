@@ -102,6 +102,7 @@ h1{
   position: fixed;
   right: 0;
   bottom: 0;
+  height: 800px;
 }
 #intro {
   background-color: #5a189a;
