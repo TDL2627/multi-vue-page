@@ -39,7 +39,7 @@
                       <div class="status"><span>Enrolled at Life Choices</span></div>
                     </div>
                 </div>
-                <div class="swiper-pagination"> </div>
+                <div class="swiper-pagination" style="cursor: move;"> </div>
             </div>
             <div id="scroll">
               <p>Scroll right</p>
@@ -63,7 +63,6 @@ h1{
 #exp{
   height: 100vh;
  margin-top: -35px;
-
     background-color: #5a189a
 }
 .time-line-box {
@@ -128,6 +127,7 @@ span{
 .swiper-container {
   width: 95%; 
   margin: auto;
+
   overflow-y: auto;
 }
 .swiper-wrapper{
@@ -139,12 +139,14 @@ span{
 .swiper-container::-webkit-scrollbar-track{
    background:#a8a8a8b6;
    
+   
 }
 .swiper-container::-webkit-scrollbar{
-  height: 10px;
+  height: 20px;
+  
 }
 .swiper-container::-webkit-scrollbar-thumb{
-   background: #4F4F4F !important;
+   background: #ff7900 !important;
 }
 .swiper-slide {
   text-align: center;

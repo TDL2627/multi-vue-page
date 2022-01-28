@@ -12,7 +12,7 @@
 </p>
 <br>
 <p>
-  I have 2 years of coding experience which I have acquired via self-learning, tertiary institutions and multiple work enviroments.I find coding very interesting and beleive it is my super power.
+  I have 3 years of coding experience which I have acquired via self-learning, tertiary institutions and multiple work enviroments.I find coding very interesting and beleive it is my super power.
 </p>
 <br>
 <p>

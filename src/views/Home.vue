@@ -32,7 +32,8 @@ export default {
 <style  scoped>
 .home{
 background-color: #3c096c;
-height: 95vh;
+ height: 100vh;
+ margin-top: -35px;
 }
 a{
   position: fixed;

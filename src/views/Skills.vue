@@ -10,13 +10,13 @@
  <div class="flip-card">
   <div class="flip-card-inner">
     <div class="flip-card-front">
-      <img class="skill" src="../assets/icons/firebase.png" alt="skill">
+      <img class="skill" src="https://img.icons8.com/ios/50/000000/html-5--v1.png" alt="skill">
     </div>
     <div class="flip-card-back">
       <h4>HTML</h4>
-      <h5>Great</h5>
+      <h5>3 years </h5>
     <div class="progress1">
-   <div class="progress-value1" style="width: 60%"><span>60%</span></div>
+   <div class="progress-value1" style="width: 90%"><span>90%</span></div>
 </div>
     </div>
   </div>
@@ -26,13 +26,109 @@
  <div class="flip-card">
   <div class="flip-card-inner">
     <div class="flip-card-front">
-      <img class="skill" src="../assets/icons/firebase.png" alt="skill">
+      <img class="skill" src="https://img.icons8.com/ios/50/000000/css3.png" alt="skill">
     </div>
     <div class="flip-card-back">
-      <h4>John Doe</h4>
-      <p>Architect & Engineer</p>
+      <h4>CSS</h4>
+     <h5>3 years</h5>
       <div class="progress1">
-   <div class="progress-value1" style="width: 80%"><span>80%</span></div>
+   <div class="progress-value1" style="width: 79%"><span>79%</span></div>
+</div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="col-lg-3">
+ <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img class="skill" src="https://img.icons8.com/ios/50/000000/javascript-logo.png" alt="skill">
+    </div>
+    <div class="flip-card-back">
+      <h4>JavaScript</h4>
+       <h5>2 years</h5>
+   <div class="progress1">
+   <div class="progress-value1" style="width: 65%"><span>65%</span></div>
+</div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="col-lg-3">
+ <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img class="skill" src="https://img.icons8.com/windows/50/000000/node-js.png" alt="skill">
+    </div>
+    <div class="flip-card-back">
+      <h4>Node JS</h4>
+      <h5>6 months</h5>
+     <div class="progress1">
+   <div class="progress-value1" style="width: 41%"><span>41%</span></div>
+</div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="col-lg-3">
+ <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img class="skill" src="https://img.icons8.com/ios/50/000000/python--v1.png" alt="skill">
+    </div>
+    <div class="flip-card-back">
+      <h4>Python</h4>
+   <h5>3 months</h5>
+      <div class="progress1">
+   <div class="progress-value1" style="width: 30%"><span>30%</span></div>
+</div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="col-lg-3">
+ <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img class="skill" src="https://img.icons8.com/ios/50/000000/php-logo.png" alt="skill">
+    </div>
+    <div class="flip-card-back">
+      <h4>PHP</h4>
+      <h5>6 months</h5>
+       <div class="progress1">
+   <div class="progress-value1" style="width: 44%"><span>44%</span></div>
+</div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="col-lg-3">
+ <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img class="skill"  src="https://img.icons8.com/windows/64/000000/vuejs.png" alt="skill">
+    </div>
+    <div class="flip-card-back">
+      <h4>Vue</h4>
+      <h5>1 month</h5>
+       <div class="progress1">
+   <div class="progress-value1" style="width: 22%"><span>22%</span></div>
+</div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="col-lg-3">
+ <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img class="skill" src="https://img.icons8.com/ios/50/000000/angularjs.png" alt="skill">
+    </div>
+    <div class="flip-card-back">
+      <h4>Angular</h4>
+     <h5>6 months</h5>
+     <div class="progress1">
+   <div class="progress-value1" style="width: 63%"><span>63%</span></div>
 </div>
     </div>
   </div>
@@ -45,9 +141,11 @@
       <img class="skill" src="../assets/icons/firebase.png" alt="skill">
     </div>
     <div class="flip-card-back">
-      <h4>John Doe</h4>
-      <p>Architect & Engineer</p>
-      <p>We love that guy</p>
+      <h4>Fire Base</h4>
+      <h5>6 months</h5>
+       <div class="progress1">
+   <div class="progress-value1" style="width: 45%"><span>45%</span></div>
+</div>
     </div>
   </div>
 </div>
@@ -56,12 +154,14 @@
  <div class="flip-card">
   <div class="flip-card-inner">
     <div class="flip-card-front">
-      <img class="skill" src="../assets/icons/firebase.png" alt="skill">
+      <img class="skill" src="https://img.icons8.com/ios/50/000000/mysql-logo.png" alt="skill">
     </div>
     <div class="flip-card-back">
-      <h4>John Doe</h4>
-      <p>Architect & Engineer</p>
-      <p>We love that guy</p>
+      <h4>MySQL</h4>
+     <h5>1 year</h5>
+      <div class="progress1">
+   <div class="progress-value1" style="width: 69%"><span>69%</span></div>
+</div>
     </div>
   </div>
 </div>
@@ -70,12 +170,14 @@
  <div class="flip-card">
   <div class="flip-card-inner">
     <div class="flip-card-front">
-      <img class="skill" src="../assets/icons/firebase.png" alt="skill">
+      <img class="skill" src="https://img.icons8.com/ios/50/000000/git.png" alt="skill">
     </div>
     <div class="flip-card-back">
-      <h4>John Doe</h4>
-      <p>Architect & Engineer</p>
-      <p>We love that guy</p>
+      <h4>Src Control</h4>
+      <h5>3 years</h5>
+      <div class="progress1">
+   <div class="progress-value1" style="width: 94%"><span>94%</span></div>
+</div>
     </div>
   </div>
 </div>
@@ -84,96 +186,14 @@
  <div class="flip-card">
   <div class="flip-card-inner">
     <div class="flip-card-front">
-      <img class="skill" src="../assets/icons/firebase.png" alt="skill">
+      <img class="skill" src="https://img.icons8.com/windows/50/000000/bootstrap.png" alt="skill">
     </div>
     <div class="flip-card-back">
-      <h4>John Doe</h4>
-      <p>Architect & Engineer</p>
-      <p>We love that guy</p>
-    </div>
-  </div>
+      <h4>Bootstrap</h4>
+     <h5>2 years</h5>
+      <div class="progress1">
+   <div class="progress-value1" style="width: 84%"><span>84%</span></div>
 </div>
-</div>
-<div class="col-lg-3">
- <div class="flip-card">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-      <img class="skill" src="../assets/icons/firebase.png" alt="skill">
-    </div>
-    <div class="flip-card-back">
-      <h4>John Doe</h4>
-      <p>Architect & Engineer</p>
-      <p>We love that guy</p>
-    </div>
-  </div>
-</div>
-</div>
-<div class="col-lg-3">
- <div class="flip-card">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-      <img class="skill" src="../assets/icons/firebase.png" alt="skill">
-    </div>
-    <div class="flip-card-back">
-      <h4>John Doe</h4>
-      <p>Architect & Engineer</p>
-      <p>We love that guy</p>
-    </div>
-  </div>
-</div>
-</div>
-<div class="col-lg-3">
- <div class="flip-card">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-      <img class="skill" src="../assets/icons/firebase.png" alt="skill">
-    </div>
-    <div class="flip-card-back">
-      <h4>John Doe</h4>
-      <p>Architect & Engineer</p>
-      <p>We love that guy</p>
-    </div>
-  </div>
-</div>
-</div>
-<div class="col-lg-3">
- <div class="flip-card">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-      <img class="skill" src="../assets/icons/firebase.png" alt="skill">
-    </div>
-    <div class="flip-card-back">
-      <h4>John Doe</h4>
-      <p>Architect & Engineer</p>
-      <p>We love that guy</p>
-    </div>
-  </div>
-</div>
-</div>
-<div class="col-lg-3">
- <div class="flip-card">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-      <img class="skill" src="../assets/icons/firebase.png" alt="skill">
-    </div>
-    <div class="flip-card-back">
-      <h4>John Doe</h4>
-      <p>Architect & Engineer</p>
-      <p>We love that guy</p>
-    </div>
-  </div>
-</div>
-</div>
-<div class="col-lg-3">
- <div class="flip-card">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-      <img class="skill" src="../assets/icons/firebase.png" alt="skill">
-    </div>
-    <div class="flip-card-back">
-      <h4>John Doe</h4>
-      <p>Architect & Engineer</p>
-      <p>We love that guy</p>
     </div>
   </div>
 </div>
@@ -274,10 +294,11 @@ h4{
 }
 
 .progress-value1 {
-	animation: load 3s normal forwards;
 	box-shadow: 0 10px 40px -10px #fff;
 	border-radius: 100px;
-	background: #e03c83;
+	background-color: #ff7900;
+  animation: load 3s normal forwards;
+ animation-delay: 3s;
 	height: 30px;
 	width: 0;
 }
