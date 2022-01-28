@@ -49,15 +49,19 @@ export default {
 <style scoped>
 .container-fluid{
   background-color: #240046 !important;
-  color: azure;
+  color: #ff7900;
   position: fixed;
   border-bottom-right-radius: 250px;
   top: 0;
+}
+ul{
+  margin-left:25%;
 }
 /* router-link is just like the a tag */
 a{
   text-decoration: none;
   color: #e0aaff;
+ 
 }
 a:hover{
   color: #ff7900;
@@ -66,6 +70,8 @@ box-shadow: 12px 8px 15px 1px #E0AAFF;
 }
 .nav-item{
   margin: 10px;
+  margin-top: 25px;
+ 
 }
 
 
