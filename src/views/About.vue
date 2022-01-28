@@ -1,7 +1,7 @@
 <template>
   <div class="about">
 
-    <h1>About</h1>
+    <h1>ABOUT</h1>
 <div id="ab1">
 <h3>Description</h3>
 <div class="text">
@@ -54,7 +54,7 @@
 
 </div>
 </div>
-
+<a href="../assets/Resume.pdf">Download CV</a>
 </div>
 </div>
   </div>
