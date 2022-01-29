@@ -31,7 +31,7 @@ export default {
 </script>
 <style  scoped>
 .home{
-background-color: #3c096c;
+background: #3c096c;
  height: 100vh;
  margin-top: -35px;
 }
@@ -120,8 +120,13 @@ h1{
 @media only screen and (max-width: 600px) {
   #me{
 display: none;
+
+  }
+  .home{
+     background:linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../assets/people/me.png"),#5a189a;
   }
   h1{
+
     font-size: 50px;
   }
   #wordz{

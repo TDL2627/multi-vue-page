@@ -36,6 +36,7 @@ border:2px solid #FF7900;
 color: white;
 width:100px;
 margin: 10px;
+padding: 10px;
 border-radius: 25px;
 }
 .buttunz:hover{
@@ -45,4 +46,7 @@ border-radius: 25px;
 box-shadow: -11px 5px 15px 5px #FF7900;
 
 }
+
+
+
 </style>
