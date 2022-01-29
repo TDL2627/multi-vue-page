@@ -30,5 +30,19 @@ export default {
   font-family: "Comfortaa" !important;
 }
 
+.buttunz{
+background-color:#240046  ;
+border:2px solid #FF7900;
+color: white;
+width:100px;
+margin: 10px;
+border-radius: 25px;
+}
+.buttunz:hover{
+  background-color: white;
+  color: #FF7900;
+  -webkit-box-shadow: -11px 5px 15px 5px #FF7900; 
+box-shadow: -11px 5px 15px 5px #FF7900;
 
+}
 </style>

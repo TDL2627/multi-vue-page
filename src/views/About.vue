@@ -54,7 +54,7 @@
 
 </div>
 </div>
-<a href="../assets/Resume.pdf">Download CV</a>
+<a class="buttunz" href="../assets/Resume.pdf">Download CV</a>
 </div>
 </div>
   </div>

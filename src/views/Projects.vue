@@ -1,33 +1,36 @@
 <template>
   <h1>This is the projects</h1>
-  
-    <h1>My Animations</h1>
-    <div class="button-container">
-        <button onclick="filterCards('All')">All</button>
-        <button onclick="filterCards('Sad')">Sad</button>
-        <button onclick="filterCards('Funny')">Funny</button>
-        <button onclick="filterCards('Romance')">Romance</button>
-        <button onclick="filterCards('Abstract')">Abstract</button>
-        <button onclick="filterCards('Cartoon')">Cartoon</button>
-      </div>
-      <div class="project-container">
-
-      </div>
+  <ul id="example-1">
+  <li v-for="item in items" :key="item.message">
+    {{ item.message }}
+  </li>
+</ul>
 </template>
 
+
 <script>
-// import * as Projects from '../assets/js/script.js'
+export default {
+  
+  // el: '#example-1',
+  // data: {
+  //   items: [
+  //     { message: 'Foo' },
+  //     { message: 'Bar' }
+  //   ]
+  // }
 
-// export default {
-//   data() {
-//     return {
-//       message: `Hello ${Projects.MY_CONST}!` 
-//     }
-//   }
-// }
+  // mounted() {
+  //   let externalScript = document.createElement('script')
+  //   externalScript.setAttribute('src', '../assets/js.script.js')
+  //   document.head.appendChild(externalScript)
+  // }
 
+}
 
 </script>
+
+
+
 
 <style>
 

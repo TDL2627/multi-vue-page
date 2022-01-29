@@ -89,14 +89,14 @@ a{
 }
 
 #wordz{
-  padding-top:5%;
+  padding-top:10%;
   padding-left: 20px;
   text-align: start;
 }
 h1{
   
   color:white;
-  font-size: 100px;
+  font-size: 75px;
 
 }
 #me{
@@ -114,6 +114,19 @@ h1{
   top: 0;
   left: 0;
     animation: hide 1s linear 1s 1 forwards;
+}
+
+/* media query */
+@media only screen and (max-width: 600px) {
+  #me{
+display: none;
+  }
+  h1{
+    font-size: 50px;
+  }
+  #wordz{
+    padding-top: 45%;
+  }
 }
 
 /* animation */
