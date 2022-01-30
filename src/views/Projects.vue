@@ -1,15 +1,16 @@
 <template>
   <div id="projects">
-    <h2>My projects:</h2>
+    <h1>PROJECTS</h1>
     
 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="../assets/project/reactor.png" alt="image">
+      <img src="../assets/project/reactor.png" class="project-image" alt="image">
       <h3>Reactor</h3>
       <p>Moderate-</p>
       <p>A reaction game made with VUEjs.</p>
-<div style="display:flex; position:center;">
+<div  id="link"
+ style="display:flex;">
   <a target="_blank" href="https://github.com/TDL2627/ReactGame" class="buttunz">Git</a>
   <a target="_blank" href="https://reactor2627.web.app/" class="buttunz">Live</a>
 </div>
@@ -17,14 +18,15 @@
     <div class="carousel-item" v-for="project in filteredprojects" :key="project.title">
     <img :src="project.img" class="project-image">
       <div class="content">
-        <h1 class="project-title">
+        <h2 class="project-title">
           {{ project.title }}
-        </h1>
-        {{project.level}}
+        </h2>
+        <h4> {{project.level}}</h4>
+       
         <p>
           {{ project.description }}
         </p>
-        <a :href="project.linkGit" target="_blank" class="buttunz">GIT</a>
+        <a :href="project.linkGit" target="_blank"  class="buttunz">GIT</a>
           <a :href="project.linkLive" target="_blank" class="buttunz">Live</a>
       </div>
 
@@ -102,11 +104,36 @@ export default {
 </script>
 
 <style  scoped>
+h1{
+   color: #ff7900;
+  text-decoration: underline 2px white ;
+}
+h2,p,h4{
+  color:white;
+}
+.carousel{
+  background: rgba( 255, 106, 4, 0.45 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.carousel-item{
+  height: 70vh;
+}
 #projects{
-  background-color: #5a189a;
+  background-color: #190230;
   height: 100vh;
+  padding-top:75px;
 }
 .project-image{
-  height: 400px;
+  height: 300px;
+}
+a{
+  width: 150px !important;
+}
+#link{
+  margin-left: 40%;
 }
 </style>

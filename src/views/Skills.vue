@@ -222,7 +222,7 @@ h4{
 }
 #skills{
    height: 100vh;
- margin-top: -30px;
+ margin-top: 0px;
  overflow-y: hidden;
     background-color: #3c096c;
 }

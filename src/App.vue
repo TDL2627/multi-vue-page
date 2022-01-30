@@ -34,7 +34,7 @@ export default {
 background-color:#240046  ;
 border:2px solid #FF7900;
 color: white;
-width:100px;
+width:150px;
 margin: 10px;
 padding: 10px;
 text-decoration: none;

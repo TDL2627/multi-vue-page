@@ -1,4 +1,5 @@
 <template>
+<div id="contact">
  <form target="_blank" action="https://formspree.io/f/mleavgwr" method="POST">
               <h4 class="contact-head cnthead">Contact me:</h4>
               <br>
@@ -14,6 +15,8 @@
                 <button  class=" buttunz" type="reset" value="Reset">Reset</button>
               </div>
             </form>
+</div>
+
 
 
 
@@ -28,6 +31,13 @@ export default {
 </script>
 
 <style scoped>
+#contact{
+     background-color: #3c096c;
+     height: 100vh;
+     margin-top: -15px;
+     padding: 0;
+    
+}
 form {
     max-width: 420px;
     margin: 30px auto;

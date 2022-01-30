@@ -62,7 +62,7 @@ h1{
 }
 #exp{
   height: 100vh;
- margin-top: -35px;
+
     background-color: #5a189a
 }
 .time-line-box {

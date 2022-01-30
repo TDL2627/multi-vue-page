@@ -33,7 +33,7 @@ export default {
 .home{
 background: #3c096c;
  height: 100vh;
- margin-top: -35px;
+ margin-top: 0px;
 }
 a{
   position: fixed;
