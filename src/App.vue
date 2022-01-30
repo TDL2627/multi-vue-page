@@ -37,6 +37,7 @@ color: white;
 width:100px;
 margin: 10px;
 padding: 10px;
+text-decoration: none;
 border-radius: 25px;
 }
 .buttunz:hover{

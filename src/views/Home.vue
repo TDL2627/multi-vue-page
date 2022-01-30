@@ -13,7 +13,7 @@
     </div>
 
 
-<img id="me" src="../assets/people/me.png" alt="me">
+<img id="me" src='../assets/people/me.png' alt="me">
   </div>
 </template>
 

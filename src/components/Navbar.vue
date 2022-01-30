@@ -37,7 +37,7 @@
   </div>
 </nav>
 
-  <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Toggle right offcanvas</button>
+  <button id="mob-nav" class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Toggle right offcanvas</button>
 
 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
   <div class="offcanvas-header">
@@ -89,8 +89,12 @@ a.router-link-exact-active {
 font-weight: bold;
 text-decoration: underline ;
 }
+#mob-nav{
+  display: none;
+}
 /* media query */
 @media only screen and (max-width: 600px) {
 .container-fluid{display: none !important;}
+
 }
 </style>
