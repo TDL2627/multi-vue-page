@@ -1,7 +1,10 @@
 <template>
 <Navbar/>
-
-  <router-view/>
+<router-view v-slot="{ Component }">
+  <transition name="scale" mode="out-in">
+    <component :is="Component" />
+  </transition>
+</router-view>
   <Footer/>
 </template>
 
@@ -19,12 +22,28 @@ export default {
 }
 </script>
 <style>
+
+.scale-enter-active,
+.scale-leave-active {
+  transition: all 0.5s ease;
+}
+
+
+.scale-enter-from,
+.scale-leave-to {
+  opacity: 0;
+  transform: scale(0.9);
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-
+ background-color: #FF7900;
+}
+body{
+  background-color: #FF7900;
 }
 * {
   font-family: "Comfortaa" !important;
