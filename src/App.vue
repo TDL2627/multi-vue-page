@@ -66,7 +66,24 @@ border-radius: 25px;
 box-shadow: -11px 5px 15px 5px #FF7900;
 
 }
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
 
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #FF7900; 
+  color: red;
+  border-radius: 10px;
+}
 
 
 </style>

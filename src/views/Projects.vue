@@ -6,8 +6,8 @@
   <div class="carousel-inner">
     <div class="carousel-item active">
       <img src="../assets/project/reactor.png" class="project-image" alt="image">
-      <h3>Reactor</h3>
-      <p>Moderate-</p>
+      <h2>Reactor</h2>
+      <h4>Moderate</h4>
       <p>A reaction game made with VUEjs.</p>
 <div  id="link"
  style="display:flex;">
@@ -108,7 +108,10 @@ h1{
    color: #ff7900;
   text-decoration: underline 2px white ;
 }
-h2,p,h4{
+h4{
+  color: #000;
+}
+h2,p{
   color:white;
 }
 .carousel{
@@ -125,6 +128,8 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 #projects{
   background-color: #190230;
   height: 100vh;
+  padding-left: 100px;
+  padding-right: 100px;
   padding-top:75px;
 }
 .project-image{

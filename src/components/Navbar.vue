@@ -37,17 +37,8 @@
   </div>
 </nav>
 
-  <button id="mob-nav" class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Toggle right offcanvas</button>
+  
 
-<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-  <div class="offcanvas-header">
-    <h5 id="offcanvasRightLabel">Offcanvas right</h5>
-    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body">
-       <router-link   to="/contact"><p>Contact</p></router-link>
-  </div>
-</div>
 </template>
 
 <script>
@@ -58,7 +49,12 @@ export default {
 
 <style scoped>
 .container-fluid{
-  background-color: #240046 !important;
+background: rgba( 34, 0, 52, 0.65 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+
+border: 1px solid rgba( 255, 255, 255, 0.18 );
   color: #ff7900;
   position: fixed;
   border-bottom-right-radius: 250px;
@@ -89,12 +85,14 @@ a.router-link-exact-active {
 font-weight: bold;
 text-decoration: underline ;
 }
-#mob-nav{
-  display: none;
+button{
+  border: none;
+  margin-right: 20px;
+  background-color: #ff7900 !important;
 }
 /* media query */
 @media only screen and (max-width: 600px) {
-.container-fluid{display: none !important;}
+
 
 }
 </style>
