@@ -69,6 +69,9 @@ export default {
 </script>
 
 <style scoped>
+.about{
+  padding-top: 10px;
+}
 h3{
   padding-top: 20%;
   color: white;

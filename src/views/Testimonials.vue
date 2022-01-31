@@ -1,6 +1,7 @@
 <template>
 <div id="testi">
  <h1>TESTIMONIALS</h1>
+   <div class="box sb1">Scroll down</div>
   <div class="container">
     <div class="row">
 <div class="col-lg-4 testimonials" v-for="person in people" :key="person.name">
@@ -55,11 +56,11 @@ h5{
 #testi{
 background-color: #5a189a;
   padding-bottom: 100px;
-  padding-top: 100px;
+  padding-top: 75px;
   padding-left: 100px;
 }
 .testimonials{
-  height: 500px;
+  height: 400px;
  background: rgba(128, 49, 231, 0.45);
 box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
 backdrop-filter: blur( 4px );
@@ -72,7 +73,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
   
 }
 .piks{
-  height: 300px;
+  height: 200px;
   background-color: white;
   width: 300px;
 }
@@ -84,5 +85,48 @@ p{
   
   height: 100px;
   overflow-x: hidden;
+}
+/* tip */
+.box {
+  width: 200px;
+  z-index: 85595947;
+  background: #ff7900;
+  padding: 20px;
+  text-align: center;
+  font-weight: 900;
+  color: #fff;
+  font-family: arial;
+  position: fixed;
+  top: 125px;
+  right: 25px;
+
+  animation: hide 1s linear 2s 1 forwards;
+}
+
+.sb1:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 10px solid #ff7900;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #ff7900;
+  border-bottom: 10px solid transparent;
+  right: -19px;
+  top: 6px;
+}
+
+
+/* animation */
+@keyframes hide {
+    to {
+    z-index: -444;
+        opacity: 0;
+    }
+}
+@keyframes showing{
+  to{
+    opacity: 1;
+  }
 }
 </style>

@@ -1,7 +1,7 @@
 <template>
 <div id="skills">
 
-
+       <div class="box sb1">Hover over cards</div>
   <h1>SKILLS</h1>
   
   <div class="container">
@@ -211,18 +211,19 @@ export default {
 
 <style scoped>
 h1{
-  padding-top:8% ;
+  padding-bottom: 50px;
   color: #ff7900;
   text-decoration: underline 2px white ;
 }
 h4{
   color: #ff7900;
   text-decoration: underline white;
-  ;
+  
 }
 #skills{
    height: 100vh;
  margin-top: 0px;
+ padding-top: 75px;
  overflow-y: hidden;
     background-color: #3c096c;
 }
@@ -309,7 +310,49 @@ h4{
 	text-align: center;
 	display: block;
 }
+/* tip */
+.box {
+  width: 200px;
+ 
+  background: #ff7900;
+  padding: 20px;
+  text-align: center;
+  font-weight: 900;
+  color: #fff;
+  font-family: arial;
+  position: fixed;
+  top: 125px;
+  right: 25px;
 
+  animation: hide 1s linear 2s 1 forwards;
+}
+
+.sb1:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 10px solid #ff7900;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #ff7900;
+  border-bottom: 10px solid transparent;
+  right: -19px;
+  top: 6px;
+}
+
+
+/* animation */
+@keyframes hide {
+    to {
+    z-index: -444;
+        opacity: 0;
+    }
+}
+@keyframes showing{
+  to{
+    opacity: 1;
+  }
+}
 @keyframes load {
 	0% {
 		width: 0;

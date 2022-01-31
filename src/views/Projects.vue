@@ -1,7 +1,7 @@
 <template>
   <div id="projects">
     <h1>PROJECTS</h1>
-    
+           <div class="box sb1">Browse left and right(refresh if error)</div>
 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
@@ -141,4 +141,48 @@ a{
 #link{
   margin-left: 40%;
 }
+/* tip */
+.box {
+  width: 200px;
+  z-index: 282986895675;
+  background: #ff7900;
+  padding: 20px;
+  text-align: center;
+  font-weight: 900;
+  color: #fff;
+  font-family: arial;
+  position: fixed;
+  top: 125px;
+  right: 25px;
+
+  animation: hide 1s linear 2s 1 forwards;
+}
+
+.sb1:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 10px solid #ff7900;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #ff7900;
+  border-bottom: 10px solid transparent;
+  right: -19px;
+  top: 6px;
+}
+
+
+/* animation */
+@keyframes hide {
+    to {
+    z-index: -444;
+        opacity: 0;
+    }
+}
+@keyframes showing{
+  to{
+    opacity: 1;
+  }
+}
+
 </style>
