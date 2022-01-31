@@ -1,11 +1,13 @@
 <template>
 <div id="contact">
-    <h1>CONTACT</h1>
+    
        <div class="box sb1">Message me</div>
        <div class="container">
          <div class="row">
-           <div class="col-lg-6">
+           <div class="col-lg-6 c1">
+             
              <h3>Message Me :</h3>
+             <div id="c1">
 <form target="_blank" action="https://formspree.io/f/mleavgwr" method="POST">
               <br>
                <input name="fname" type="text" placeholder="Name" required>
@@ -18,9 +20,13 @@
                 <button  class=" buttunz" type="reset" value="Reset">Reset</button>
               </div>
             </form>
+             </div>
+
            </div>
             <div class="col-lg-6">
               <h3>Other ways</h3>
+              <div id="c2">
+                
               <h5>Address : </h5>
               <p>Athlone, Cape Town, 7764, South Africa</p>
               <h5>Phone :</h5>
@@ -31,7 +37,9 @@
               <a id="wapp" target="_blank" href="https://wa.me/27660400809"><img src="https://img.icons8.com/material-outlined/48/000000/whatsapp--v1.png"></a>
               <h5>LinkedIn :</h5>
               <a id="lapp" target="_blank" href="https://www.linkedin.com/in/ashley-kannemeyer-01b37121b/"><img src="https://img.icons8.com/material-outlined/48/000000/linkedin--v1.png"></a>
-           </div>
+       
+              </div>
+               </div>
          </div>
        </div>
  
@@ -64,8 +72,14 @@ p{
 #contact{
      background-color: #3c096c;
      height: 100vh;
-     padding-top: 75px;
+     padding-top: 80px;
     
+}
+#c1{
+  padding-left:100px
+}
+#c2{
+  margin-top: 50px !important ;
 }
 form {
     max-width: 420px;
