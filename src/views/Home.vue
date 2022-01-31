@@ -1,9 +1,10 @@
 <template>
-<div id="intro">
-  <h1 id="into">Welcome</h1>
-</div>
+
 
   <div class="home">
+    <div id="intro">
+  <h1 id="into">Welcome</h1>
+</div>
     <div id="wordz">
  <h1 id="one">I am</h1>
  <h1 id="two">Abdul-Malik</h1>
@@ -110,7 +111,7 @@ h1{
   height: 100vh;
   width: 100vw;
   position: fixed;
-  z-index: 23379687384;
+  z-index: 284;
   top: 0;
   left: 0;
     animation: hide 1s linear 1s 1 forwards;

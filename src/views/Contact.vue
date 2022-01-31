@@ -2,21 +2,39 @@
 <div id="contact">
     <h1>CONTACT</h1>
        <div class="box sb1">Message me</div>
- <form target="_blank" action="https://formspree.io/f/mleavgwr" method="POST">
-         
+       <div class="container">
+         <div class="row">
+           <div class="col-lg-6">
+             <h3>Message Me :</h3>
+<form target="_blank" action="https://formspree.io/f/mleavgwr" method="POST">
               <br>
-               <input name="fname"
-                  style="width:100%; margin-left: 2px; margin:20px; border-radius: 20px; border: none; height:40px; padding: 10px; "
-                  type="text" placeholder="Name" required> <input name="email"
-                  style="width:100%; margin:20px; border-radius: 20px; border: none; height:40px; padding: 10px; "
-                  type="email" placeholder="Email" required> 
+               <input name="fname" type="text" placeholder="Name" required>
+                <input name="email" type="email" placeholder="Email" required> 
 
             <textarea name="messages" id="areatxt" cols="30" rows="10"
                   placeholder="Type your message" required></textarea> 
-              <div style="display:flex"> <button class="send-but buttunz" type="submit">Send</button>
+              <div style="display:flex"> 
+                <button class="send-but buttunz" type="submit">Send</button>
                 <button  class=" buttunz" type="reset" value="Reset">Reset</button>
               </div>
             </form>
+           </div>
+            <div class="col-lg-6">
+              <h3>Other ways</h3>
+              <h5>Address : </h5>
+              <p>Athlone, Cape Town, 7764, South Africa</p>
+              <h5>Phone :</h5>
+              <p>0660400809</p>
+              <h5>Email :</h5>
+              <p>ashleykannemeyer2@gmail.com</p>
+              <h5>WhatsApp :</h5>
+              <a id="wapp" target="_blank" href="https://wa.me/27660400809"><img src="https://img.icons8.com/material-outlined/48/000000/whatsapp--v1.png"></a>
+              <h5>LinkedIn :</h5>
+              <a id="lapp" target="_blank" href="https://www.linkedin.com/in/ashley-kannemeyer-01b37121b/"><img src="https://img.icons8.com/material-outlined/48/000000/linkedin--v1.png"></a>
+           </div>
+         </div>
+       </div>
+ 
 </div>
 
 
@@ -33,22 +51,35 @@ export default {
 </script>
 
 <style scoped>
+h1,h3{
+   color: #ff7900;
+  text-decoration: underline 2px white ;
+}
+h5{
+  color: #ff7900;
+}
+p{
+ color: white;
+}
 #contact{
      background-color: #3c096c;
      height: 100vh;
-     /* padding-top: 75px; */
+     padding-top: 75px;
     
 }
 form {
     max-width: 420px;
- 
-   
+  margin: 0;
     text-align: left;
-    padding: 40px;
     border-radius: 10px;
 }
 input,textarea{
   color: #ff7900;
+  width: 300px;
+  margin: 10px;
+  border-radius: 25px;
+  border: none;
+  padding: 10px;
 }
 
 .submit {

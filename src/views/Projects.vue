@@ -11,8 +11,8 @@
       <p>A reaction game made with VUEjs.</p>
 <div  id="link"
  style="display:flex;">
-  <a target="_blank" href="https://github.com/TDL2627/ReactGame" class="buttunz">Git</a>
-  <a target="_blank" href="https://reactor2627.web.app/" class="buttunz">Live</a>
+  <a target="_blank" href="https://github.com/TDL2627/ReactGame" class="buttun">Git</a>
+  <a target="_blank" href="https://reactor2627.web.app/" class="buttun">Live</a>
 </div>
     </div>
     <div class="carousel-item" v-for="project in filteredprojects" :key="project.title">
@@ -59,7 +59,7 @@ export default {
   {title: 'Charizard', description: 'A fan page created using fetch API.', level:"Moderate",img: require("@/assets/project/charizard.png"),linkGit:"https://github.com/TDL2627/charizard",linkLive:"https://tdl2627-charizard.netlify.app/"},
  {title: 'Swegga', description: 'A web app that does cart operations.', level:"Moderate",img: require("@/assets/project/swegga.png"),linkGit:"https://github.com/TDL2627/swegga",linkLive:"https://tdl2627-swegga.netlify.app/"},
  {title: 'Omnibar', description: 'A unique navbar I created myself.', level:"Moderate",img: require("@/assets/project/omni.png"),linkGit:"https://github.com/TDL2627/omniBar",linkLive:"https://omnibar.netlify.app/"},
-  {title: 'Quiz', description: 'A riddle game made with HTML,PHP and CSS.', level:"Advaanced",img: require("@/assets/project/quiz.png"),linkGit:"https://github.com/TDL2627/quiz",linkLive:"https://tdl2627-quiz.herokuapp.com/"},
+  {title: 'Quiz', description: 'A riddle game made with HTML,PHP and CSS.', level:"Advanced",img: require("@/assets/project/quiz.png"),linkGit:"https://github.com/TDL2627/quiz",linkLive:"https://tdl2627-quiz.herokuapp.com/"},
    {title: 'Mock site', description: 'A duplicate website made with HTML and CSS.', level:"Basic",img: require("@/assets/project/doob.png"),linkGit:"https://github.com/TDL2627/doob-single-page",linkLive:"https://tdl2627-a-single-page.netlify.app/"},
  {title: 'Cards', description: 'Basic cards made with HTML and CSS.', level:"Basic",img: require("@/assets/project/card.png"),linkGit:"https://github.com/TDL2627/basic-cards",linkLive:"https://tdl2627-cards.netlify.app/"},
   {title: 'Calculator', description: 'A basic calculator made with Javascript, HTML and CSS.', level:"Moderate",img: require("@/assets/project/calculator.png"),linkGit:"https://github.com/TDL2627/calculator",linkLive:"https://tdl2627-calculator.netlify.app/"},
@@ -104,6 +104,23 @@ export default {
 </script>
 
 <style  scoped>
+.buttun{
+  background-color:#240046  ;
+border:2px solid #FF7900;
+color: white;
+width: 50px !important;
+margin: 5px;
+padding: 5px;
+text-decoration: none;
+border-radius: 25px;
+}
+.buttun:hover{
+  background-color: white;
+  color: #FF7900;
+  -webkit-box-shadow: -11px 5px 15px 5px #FF7900; 
+box-shadow: -11px 5px 15px 5px #FF7900;
+
+}
 h1{
    color: #ff7900;
   text-decoration: underline 2px white ;
@@ -123,6 +140,7 @@ border-radius: 10px;
 border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 .carousel-item{
+  padding-top: 20px;
   height: 70vh;
 }
 #projects{
@@ -139,7 +157,7 @@ a{
   width: 150px !important;
 }
 #link{
-  margin-left: 40%;
+  margin-left: 45%;
 }
 /* tip */
 .box {

@@ -67,7 +67,7 @@ ul{
 /* router-link is just like the a tag */
 a{
   text-decoration: none;
-  color: #e0aaff;
+  color: whitesmoke;
  
 }
 a:hover{
