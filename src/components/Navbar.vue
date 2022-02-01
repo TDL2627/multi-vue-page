@@ -57,7 +57,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
   position: fixed;
   border-bottom-right-radius: 250px;
   top: 0;
-  z-index: 1000052545770;
+  z-index:999999999999999999999971000052545770;
 }
 ul{
   margin-left:25%;

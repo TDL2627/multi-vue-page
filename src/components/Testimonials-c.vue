@@ -121,7 +121,7 @@ p{
 #testi{
   padding-bottom: 50px;
   padding-top: 50px;
-  padding-left: 10px;
+   padding-left: 10%;
   padding-right:10px;
 }
 .testimonials{

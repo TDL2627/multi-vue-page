@@ -1,8 +1,11 @@
 <template>
 <div id="footer">
- <p>Developed by Kannemeyer</p>
+ <p>Developed by Kannemeyer </p>
+ <p>2022</p>
+ <p>©TDL2627</p>
+ 
  <div class="iconz">
-<a target="_blank" class="sidelinker" href="https://github.com/TDL2627/"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 172 172" style=" fill:#ff7900;">
+<a target="_blank" class="sidelinker" href="https://github.com/TDL2627/"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="30" viewBox="0 0 172 172" style=" fill:#ff7900;">
           <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
             <path d="M0,172v-172h172v172z" fill="none"></path>
             <g fill="#ffffff">
@@ -12,7 +15,7 @@
           </g>
         </svg></a>
 
-        <a target="_blank" class="sidelinker" href="https://www.linkedin.com/in/ashley-kannemeyer-01b37121b/"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 172 172" style=" fill:#000000;">
+        <a target="_blank" class="sidelinker" href="https://www.linkedin.com/in/ashley-kannemeyer-01b37121b/"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="30" viewBox="0 0 172 172" style=" fill:#000000;">
           <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
             <path d="M0,172v-172h172v172z" fill="none"></path>
             <g fill="#ffffff">
@@ -22,7 +25,7 @@
           </g>
         </svg></a>
 
-        <a target="_blank" class="sidelinker" href="https://codepen.io/TDL2627"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 172 172" style=" fill:#000000;">
+        <a target="_blank" class="sidelinker" href="https://codepen.io/TDL2627"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="30" viewBox="0 0 172 172" style=" fill:#000000;">
           <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
             <path d="M0,172v-172h172v172z" fill="none"></path>
             <g fill="#ecf0f1">
@@ -59,11 +62,26 @@ backdrop-filter: blur( 4px );
 border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 p{
-    margin-top: 15px;
+  margin: 0;
     color: #ff7900;
+    font-size: small;
 }
 a{
     margin-right:20px;
+    margin-bottom: 10px;
+   
+
+}
+.iconz{
+  position: fixed;
+  bottom: 0;
+  right:0;
+   padding-bottom: 10px;
+}
+@media only screen and (max-width:600px) {
+.iconz{
+  display: none;
+}
 }
 
 </style>

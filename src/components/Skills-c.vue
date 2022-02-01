@@ -344,7 +344,7 @@ h4{
 #skills{
   height:100%;
   padding-bottom: 100px;
-  padding-left: 12px;
+  padding-left: 10%;
 }
 }
 

@@ -162,7 +162,7 @@ a{
 /* tip */
 .box {
   width: 200px;
-  z-index: 282986895675;
+  z-index: 895675;
   background: #ff7900;
   padding: 20px;
   text-align: center;

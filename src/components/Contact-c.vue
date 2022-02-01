@@ -76,7 +76,7 @@ p{
     
 }
 #c1{
-  padding-left:100px
+ padding-left: 10% !important;
 }
 #c2{
   margin-top: 50px !important ;
@@ -142,7 +142,7 @@ input,textarea{
     padding-bottom: 100px;
   }
   #c1{
-  padding-left:0px;
+   padding-left: 10%;
   padding-bottom:40px;
 }
 #c2{
