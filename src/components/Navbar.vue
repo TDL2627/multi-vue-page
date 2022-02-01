@@ -5,8 +5,32 @@
 
 <button class="btn btn-primary " id="offie" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><span class="navbar-toggler-icon"></span></button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+      <router-link to="/">Home</router-link> 
+        </li>
+        <li class="nav-item">
+          <router-link  to="/about">About</router-link>
+        </li>
+        <div class="nav-item">
+    <router-link  to="/experience">Experience </router-link> 
+        </div>
+        <div class="nav-item">
+<router-link  to="/skills">Skills </router-link>
+        </div>
+        <div class="nav-item">
+  <router-link  to="/projects">Projects</router-link>
+        </div>
+        <div class="nav-item">
+ <router-link   to="/testimonials">Testimonials</router-link>
+        </div>
+       
+           <div class="nav-item">
+      <router-link   to="/contact"><p>Contact</p></router-link>
+        </div>
+</ul>
     </div>
+    
   </div>
 </nav>
 

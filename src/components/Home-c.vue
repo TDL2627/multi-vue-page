@@ -107,11 +107,12 @@ h1{
   height: 800px;
 }
 #intro {
-  background-color: #5a189a;
+background:linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../assets/bg.png");
   height: 100vh;
   width: 100vw;
   position: fixed;
   z-index: 284;
+padding-top: 0;
   top: 0;
   left: 0;
     animation: hide 1s linear 1s 1 forwards;
@@ -123,6 +124,9 @@ h1{
   #me{
 display: none;
 
+  }
+  #intro{
+      padding-top:25%;
   }
   .home{
      background:linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../assets/people/me.png"),#5a189a;
