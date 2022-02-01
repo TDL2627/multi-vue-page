@@ -54,7 +54,7 @@ h5{
   color: #ff7900;
 }
 #testi{
-background-color: #5a189a;
+ background:linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../assets/bg.png");
   padding-bottom: 100px;
   padding-top: 75px;
   padding-left: 100px;

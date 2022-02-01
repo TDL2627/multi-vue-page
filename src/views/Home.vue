@@ -32,7 +32,7 @@ export default {
 </script>
 <style  scoped>
 .home{
-background: #3c096c;
+background:linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../assets/bg.png");
  height: 100vh;
  margin-top: 0px;
 }
@@ -116,6 +116,7 @@ h1{
   left: 0;
     animation: hide 1s linear 1s 1 forwards;
 }
+
 
 /* media query */
 @media only screen and (max-width: 600px) {

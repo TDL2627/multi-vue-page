@@ -70,7 +70,7 @@ p{
  color: white;
 }
 #contact{
-     background-color: #3c096c;
+      background:linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../assets/bg.png");
      height: 100vh;
      padding-top: 80px;
     

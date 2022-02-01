@@ -64,7 +64,7 @@ h1{
   padding-top: 75px;
   padding-left: 100px;
   padding-right: 100px;
-    background-color: #5a189a
+ background:linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../assets/bg.png");
 }
 .time-line-box {
   margin-top: 90px;

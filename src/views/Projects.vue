@@ -144,7 +144,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
   height: 70vh;
 }
 #projects{
-  background-color: #190230;
+ background:linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../assets/bg.png");
   height: 100vh;
   padding-left: 100px;
   padding-right: 100px;

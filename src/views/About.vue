@@ -85,7 +85,7 @@ export default {
 <style scoped>
 .about
 { padding-top: 25px;
-background-color: #280549;
+ background:linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../assets/bg.png");
   height: 100vh !important;
 
 }

@@ -225,7 +225,7 @@ h4{
  margin-top: 0px;
  padding-top: 75px;
  overflow-y: hidden;
-    background-color: #3c096c;
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../assets/bg.png");
 }
 .skill{
   height: 100px;
