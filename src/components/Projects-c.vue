@@ -1,11 +1,12 @@
 <template>
   <div id="projects">
-    <h1>PROJECTS</h1>
+    <h1 class="kop">PROJECTS</h1>
            <div class="box sb1">Browse left and right(refresh if nothing shows)</div>
 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
       <img src="../assets/project/reactor.png" class="project-image" alt="image">
+      <p class="iden">0/16</p>
       <h2>Reactor</h2>
       <h4>Moderate</h4>
       <p>A reaction game made with VUEjs.</p>
@@ -15,8 +16,9 @@
   <a target="_blank" href="https://reactor2627.web.app/" class="buttun">Live</a>
 </div>
     </div>
-    <div class="carousel-item" v-for="project in filteredprojects" :key="project.title">
+    <div class="carousel-item" v-for="(project,index) in filteredprojects" :key="project.title">
     <img :src="project.img" class="project-image">
+     <p class="iden">{{index}}/16</p>
       <div class="content">
         <h2 class="project-title">
           {{ project.title }}
@@ -122,8 +124,13 @@ box-shadow: -11px 5px 15px 5px #FF7900;
 
 }
 h1{
+  
    color: #ff7900;
   text-decoration: underline 2px white ;
+}
+.iden{
+  float: right;
+  padding: 20px;
 }
 h4{
   color: #000;
@@ -141,17 +148,17 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 .carousel-item{
   padding-top: 20px;
-  height: 70vh;
+  height: 65vh;
 }
 #projects{
  background:linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../assets/bg.png");
   height: 100vh;
   padding-left: 100px;
   padding-right: 100px;
-  padding-top:75px;
+   padding-top: 8%;
 }
 .project-image{
-  height: 300px;
+  height: 250px;
 }
 a{
   width: 150px !important;

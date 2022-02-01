@@ -2,7 +2,7 @@
 <div id="skills">
 
        <div class="box sb1">Hover over cards</div>
-  <h1>SKILLS</h1>
+  <h1 class="kop">SKILLS</h1>
   
   <div class="container">
     <div class="row">
@@ -211,6 +211,7 @@ export default {
 
 <style scoped>
 h1{
+   padding-top: 3%;
   padding-bottom: 50px;
   color: #ff7900;
   text-decoration: underline 2px white ;
@@ -223,7 +224,7 @@ h4{
 #skills{
    height: 100vh;
  margin-top: 0px;
- padding-top: 75px;
+ padding-top: 5%;
  overflow-y: hidden;
     background:linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../assets/bg.png");
 }

@@ -1,6 +1,6 @@
 <template>
 <div id="testi">
- <h1>TESTIMONIALS</h1>
+ <h1 class="kop">TESTIMONIALS</h1>
    <div class="box sb1">Scroll down</div>
   <div class="container">
     <div class="row">
@@ -56,8 +56,8 @@ h5{
 #testi{
  background:linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../assets/bg.png");
   padding-bottom: 100px;
-  padding-top: 75px;
-  padding-left: 100px;
+ padding-top: 8%;
+
 }
 .testimonials{
   height: 400px;
@@ -115,14 +115,16 @@ p{
   right: -19px;
   top: 6px;
 }
-
+.container{
+  margin-left: 15%;
+}
 /* media query */
 @media only screen and (max-width: 600px) {
 #testi{
   padding-bottom: 50px;
   padding-top: 50px;
-   padding-left: 10%;
-  padding-right:10px;
+   padding-left: 5%;
+  padding-right:5%;
 }
 .testimonials{
   margin: 20px;

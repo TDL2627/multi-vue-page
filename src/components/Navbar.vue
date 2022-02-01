@@ -30,7 +30,6 @@
       <router-link   to="/contact"><p>Contact</p></router-link>
         </div>
 </ul>
-  
     </div>
   </div>
 </nav>

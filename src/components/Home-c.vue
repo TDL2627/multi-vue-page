@@ -10,7 +10,7 @@
  <h1 id="two">Abdul-Malik</h1>
   <h1 id="four"> A Full Stack </h1>
  <h1 id="five">Web Developer</h1>
-   <router-link  to="/about">Let's Go</router-link>
+   <router-link class="buttunz" to="/about">Let's Go</router-link>
     </div>
 
 
@@ -90,7 +90,7 @@ a{
 }
 
 #wordz{
-  padding-top:10%;
+  padding-top:15%;
   padding-left: 20px;
   text-align: start;
 }

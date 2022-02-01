@@ -1,43 +1,16 @@
 <template>
   
 <div id="exp">
-<h1>EXPERIENCE</h1>
+<h1 class="kop">EXPERIENCE</h1>
 
   <section class="time-line-box">
             <div class="swiper-container text-center"> 
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                      <div class="timestamp"><span class="date">01/2013</span></div>
-                      <div class="status"><span>Enrolled into high school.</span></div>
+                    <div class="swiper-slide" v-for="resume of resumes" :key="resume.title">
+                      <div class="timestamp"><span class="date">{{resume.date}}</span></div>
+                      <div class="status"><span>{{resume.details}}</span></div>
                     </div>
-                    <div class="swiper-slide">
-                      <div class="timestamp"><span class="date">11/2017</span></div>
-                      <div class="status"><span>Matriculated + part time catering work.</span></div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="timestamp"><span class="date">01/2018</span></div>
-                      <div class="status"><span>Become a full time general worker.</span></div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="timestamp"><span class="date">12/2019</span></div>
-                      <div class="status"><span>Still doing general labour.</span></div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="timestamp"><span class="date">06/2020</span></div>
-                      <div class="status"><span>Enrolled at CodeSpace.</span></div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="timestamp"><span class="date">01/2021</span></div>
-                      <div class="status"><span>Uber Eats driver.</span></div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="timestamp"><span class="date">04/2021</span></div>
-                      <div class="status"><span>Developed microapps for Ayoba.</span></div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="timestamp"><span class="date">09/2021</span></div>
-                      <div class="status"><span>Enrolled at Life Choices</span></div>
-                    </div>
+              
                 </div>
                 <div class="swiper-pagination" style="cursor: move;"> </div>
             </div>
@@ -49,13 +22,27 @@
 
 <script>
 export default {
+data(){
+  return{
+    resumes:[
+      {date:"01/2013",details:"Enrolled into high school."},
+            {date:"11/2017",details:"Matriculated + part time catering work."},
+                  {date:"01/2018",details:"Become a full time general worker."},
+                        {date:"12/2019",details:"Still doing general labour."},
+             {date:"06/2020",details:"Enrolled at CodeSpace."},
+                   {date:"01/2021",details:"Uber Eats driver."},
+       {date:"04/2021",details:"Developed microapps for Ayoba."},
+             {date:"09/2021",details:"Enrolled at Life Choices"}                            
 
+    ]
+  }
+}
 }
 </script>
 
 <style scoped>
 h1{
-
+ padding-top: 3%;
   color: #ff7900;
   text-decoration: underline 2px white ;
 }

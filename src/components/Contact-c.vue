@@ -6,14 +6,14 @@
          <div class="row">
            <div class="col-lg-6 c1">
              
-             <h3>Message Me :</h3>
+             <h3 class="kop">Message Me :</h3>
              <div id="c1">
 <form target="_blank" action="https://formspree.io/f/mleavgwr" method="POST">
               <br>
                <input name="fname" type="text" placeholder="Name" required>
                 <input name="email" type="email" placeholder="Email" required> 
 
-            <textarea name="messages" id="areatxt" cols="30" rows="10"
+            <textarea name="messages" id="areatxt" cols="30" rows="8"
                   placeholder="Type your message" required></textarea> 
               <div style="display:flex"> 
                 <button class="send-but buttunz" type="submit">Send</button>
@@ -24,7 +24,7 @@
 
            </div>
             <div class="col-lg-6">
-              <h3>Contact Details</h3>
+              <h3 class="kop">Contact Details</h3>
               <div id="c2">
                 
               <h5>Address : </h5>
@@ -72,11 +72,11 @@ p{
 #contact{
       background:linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../assets/bg.png");
      height: 100vh;
-     padding-top: 80px;
+    padding-top: 8%;
     
 }
 #c1{
- padding-left: 10% !important;
+ padding-left: 20% !important;
 }
 #c2{
   margin-top: 50px !important ;
@@ -150,6 +150,14 @@ input,textarea{
 }
 input,textarea{
   width: 250px;
+}
+}
+@media only screen and (min-height: 700px) {
+#contact{
+      background:linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../assets/bg.png");
+     height: 100vh;
+     padding-top: 10%;
+    
 }
 }
 

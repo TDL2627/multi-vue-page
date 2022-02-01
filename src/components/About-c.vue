@@ -2,8 +2,8 @@
   <div class="about">
 
     <div class="container page">
-      
-    <h1>ABOUT</h1>
+     <h1 class="kop">ABOUT</h1>    
+ 
 <div class="row">
 <div class="col-lg-6 cod1">
 <h3>Description</h3>
@@ -42,7 +42,7 @@
 <br>
 <p>FROM   : Cape Town</p>
 <br>
-<a class="buttunz" href="../assets/Resume.pdf">Download CV</a>
+
 </div>
 <div class="container two">
     <img class="mini-me" src="../assets/people/me.jpg" alt="me">
@@ -75,8 +75,7 @@
 <p>Cape Town</p>
 
 </div>
-
-<a class="buttunz" href="../assets/Resume.pdf">Download CV</a>
+  
 </div>
 </div>
 
@@ -87,18 +86,13 @@
 
 </div>
 
- 
-
-
 </template>
-
-
 
 <style scoped>
 .about
-{ padding-top: 25px;
+{ padding-top: 4%;
  background:linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../assets/bg.png");
-  height: 100vh !important;
+  height: 100vh!important;
 
 }
 h1{
@@ -134,11 +128,13 @@ p{
 }
 
 .mini-me{
-  height: 150px;
-  width: 150px;
-  position: fixed;
+  height: 125px;
+  width: 125px;
+  float: right;
+  
+  /* position: fixed;
   right:190px;
-  top:200px;
+  bottom:15%; */
   border: #ff7900 solid 2px;
   border-radius: 25px;
 }
@@ -154,7 +150,9 @@ p{
   display: none;
   text-align: center;
 }
-
+.page{
+    margin-top:0;
+}
 /* media query */
 @media only screen and (max-width: 600px) {
 .about{
@@ -177,5 +175,23 @@ p{
 .email{
  font-size: 13px;
 }
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-0.5 * var(--bs-gutter-x));
+    margin-left: calc(-0.9 * var(--bs-gutter-x));
+}
+.container[data-v-da203aba] {
+    padding: none !important; 
+    padding-top: 50px;
+}
+}
+@media only screen and (min-height: 700px) {
+ .page{
+   margin-top: 1%;
+ }
 }
 </style>

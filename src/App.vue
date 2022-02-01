@@ -67,6 +67,7 @@ border-radius: 25px;
 box-shadow: -11px 5px 15px 5px #FF7900;
 
 }
+
 /* width */
 ::-webkit-scrollbar {
   width: 20px;

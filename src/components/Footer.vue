@@ -2,7 +2,7 @@
 <div id="footer">
  <p>Developed by Kannemeyer </p>
  <p>2022</p>
- <p>©TDL2627</p>
+ <p id="copy">© TDL2627</p>
  
  <div class="iconz">
 <a target="_blank" class="sidelinker" href="https://github.com/TDL2627/"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="30" viewBox="0 0 172 172" style=" fill:#ff7900;">
@@ -62,7 +62,7 @@ backdrop-filter: blur( 4px );
 border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 p{
-  margin: 0;
+  margin: 10px;
     color: #ff7900;
     font-size: small;
 }
@@ -72,6 +72,12 @@ a{
    
 
 }
+#copy{
+  position: fixed;
+  left: 5%;
+  width: 100px;
+  bottom: 10%;
+}
 .iconz{
   position: fixed;
   bottom: 0;
@@ -80,6 +86,9 @@ a{
 }
 @media only screen and (max-width:600px) {
 .iconz{
+  display: none;
+}
+#copy{
   display: none;
 }
 }
