@@ -24,11 +24,31 @@
 
 </div>
 </div>
-<div class="col-lg-6 cod2">
+<div class="col-lg-6 col-sm-12 cod2">
 <h3>Details</h3>
-<div class="container">
+<div class="three">
+  <img class="mini" src="../assets/people/me.jpg" alt="me">
+  <p>NAME   : Abdul-Malik </p> 
+
+<br>
+<p>SURNAME: Kannemeyer</p>
+
+<br>
+<p class="email">EMAIL  : ashleykannemeyer2@gmail.com</p> 
+
+<br>
+<p>AGE    : 21</p>
+
+<br>
+<p>FROM   : Cape Town</p>
+<br>
+<a class="buttunz" href="../assets/Resume.pdf">Download CV</a>
+</div>
+<div class="container two">
+    <img class="mini-me" src="../assets/people/me.jpg" alt="me">
 <div class="row">
-<div class="col-4">
+
+<div class="col-lg-4 ">
 <p>NAME   :</p> 
 <br>
 <p>SURNAME:</p>
@@ -53,10 +73,10 @@
 <p>21</p>
 <br>
 <p>Cape Town</p>
-<a class="buttunz" href="../assets/Resume.pdf">Download CV</a>
+
 </div>
 
-
+<a class="buttunz" href="../assets/Resume.pdf">Download CV</a>
 </div>
 </div>
 
@@ -121,10 +141,27 @@ p{
   text-align: start;
 }
 
+.mini-me{
+  height: 150px;
+  width: 150px;
+  position: fixed;
+  right:190px;
+  top:200px;
+  border: #ff7900 solid 2px;
+  border-radius: 25px;
+}
 
+.mini{
+   height: 150px;
+     border: #ff7900 solid 2px;
+  border-radius: 25px;
+  width: 150px;
+}
 
-
-
+.three{
+  display: none;
+  text-align: center;
+}
 
 /* media query */
 @media only screen and (max-width: 600px) {
@@ -134,6 +171,19 @@ p{
 }
 .cod1,.cod2{
   width: 100%;
+}
+.mini-me{
+  position: relative;
+}
+.two{
+  display: none;
+}
+.three{
+  text-align: center;
+  display: initial;
+}
+.email{
+ font-size: 13px;
 }
 }
 </style>

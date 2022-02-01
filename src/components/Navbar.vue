@@ -25,9 +25,7 @@
         <div class="nav-item">
  <router-link   to="/testimonials">Testimonials</router-link>
         </div>
-         <div class="nav-item">
-
-        </div>
+       
            <div class="nav-item">
       <router-link   to="/contact"><p>Contact</p></router-link>
         </div>
@@ -59,7 +57,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
   position: fixed;
   border-bottom-right-radius: 250px;
   top: 0;
-  z-index: 100000;
+  z-index: 1000052545770;
 }
 ul{
   margin-left:25%;
@@ -92,7 +90,9 @@ button{
 }
 /* media query */
 @media only screen and (max-width: 600px) {
-
+.container-fluid{
+  border-bottom-right-radius: 200px;
+}
 
 }
 </style>
