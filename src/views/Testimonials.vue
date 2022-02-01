@@ -116,6 +116,23 @@ p{
   top: 6px;
 }
 
+/* media query */
+@media only screen and (max-width: 600px) {
+#testi{
+  padding-bottom: 50px;
+  padding-top: 50px;
+  padding-left: 10px;
+  padding-right:10px;
+}
+.testimonials{
+  margin: 20px;
+  width:250px; 
+}
+.piks{
+  height: 200px;
+  width: 250px;
+}
+}
 
 /* animation */
 @keyframes hide {

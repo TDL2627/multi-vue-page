@@ -188,7 +188,28 @@ a{
   right: -19px;
   top: 6px;
 }
-
+/* media query */
+@media only screen and (max-width: 600px) {
+#projects{
+  padding-left:10px;
+  padding-top:45px;
+  padding-right: 10px;
+}
+.carousel-item{
+  padding-bottom:20px;
+}
+.project-image{
+  height: 200px;
+}
+p{
+  height: 50px;
+overflow-x: hidden;  
+  overflow-y: hidden;
+}
+#link{
+  margin-left: 25%;
+}
+}
 
 /* animation */
 @keyframes hide {
