@@ -2,11 +2,22 @@
 <nav class="navbar navbar-expand-lg navbar-light fixed-top">
   <div class="container-fluid">
   Kannemeyer
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+
+<button class="btn btn-primary " id="offie" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><span class="navbar-toggler-icon"></span></button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      
+    </div>
+  </div>
+</nav>
+
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header">
+   <img class="nav-logo" src="@/assets/icons/logo.png" alt="">
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+<ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
       <router-link to="/">Home</router-link> 
         </li>
@@ -30,10 +41,8 @@
       <router-link   to="/contact"><p>Contact</p></router-link>
         </div>
 </ul>
-    </div>
   </div>
-</nav>
-
+</div>
   
 
 </template>
@@ -56,7 +65,22 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
   position: fixed;
   border-bottom-right-radius: 250px;
   top: 0;
-  z-index:999999999999999999999971000052545770;
+  z-index:9999999999999999999999710000525457;
+}
+#offie{
+  display: none;
+}
+.offcanvas-body{
+  background-color: #3c096c;
+     border-bottom-left-radius: 250px !important;
+}
+.offcanvas{
+    width: 50%;
+     border-bottom-left-radius: 250px !important;
+     z-index: 10000000000000000000000000;
+}
+.offcanvas-header{
+  background-color: #280549;
 }
 ul{
   margin-left:25%;
@@ -75,7 +99,9 @@ a:hover{
   margin-top: 25px;
  
 }
-
+.nav-logo{
+  height: 50px;
+}
 
 a.router-link-exact-active {
   color: #ff7900;
@@ -91,6 +117,9 @@ button{
 @media only screen and (max-width: 600px) {
 .container-fluid{
   border-bottom-right-radius: 200px;
+}
+#offie{
+  display: initial;
 }
 
 }
