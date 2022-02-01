@@ -193,6 +193,14 @@ span{
   top: 6px;
 }
 
+/* media query */
+@media only screen and (max-width: 600px) {
+#exp{
+  padding-left: 10px;
+  padding-right:10px;
+}
+}
+
 /* animation */
 .wobble-hor-bottom {
 	-webkit-animation: wobble-hor-bottom 0.8s both;

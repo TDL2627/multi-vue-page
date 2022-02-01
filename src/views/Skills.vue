@@ -339,7 +339,14 @@ h4{
   right: -19px;
   top: 6px;
 }
-
+/* media query */
+@media only screen and (max-width: 600px) {
+#skills{
+  height:100%;
+  padding-bottom: 100px;
+  padding-left: 12px;
+}
+}
 
 /* animation */
 @keyframes hide {

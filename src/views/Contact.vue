@@ -36,7 +36,7 @@
               <h5>WhatsApp :</h5>
               <a id="wapp" target="_blank" href="https://wa.me/27660400809"><img src="https://img.icons8.com/external-justicon-flat-justicon/64/000000/external-whatsapp-social-media-justicon-flat-justicon.png"/></a>
               <h5>LinkedIn :</h5>
-              <a id="lapp" target="_blank" href="https://www.linkedin.com/in/ashley-kannemeyer-01b37121b/"><img src="https://img.icons8.com/material-outlined/48/000000/linkedin--v1.png"></a>
+              <a id="lapp" target="_blank" href="https://www.linkedin.com/in/ashley-kannemeyer-01b37121b/"><img src="https://img.icons8.com/external-justicon-flat-justicon/64/000000/external-linkedin-social-media-justicon-flat-justicon.png"/></a>
        
               </div>
                </div>

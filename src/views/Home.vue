@@ -132,8 +132,9 @@ display: none;
     font-size: 50px;
   }
   #wordz{
-    padding-top: 45%;
+    padding-top: 25%;
   }
+  
 }
 
 /* animation */
