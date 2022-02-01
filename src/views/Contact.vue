@@ -136,6 +136,22 @@ input,textarea{
   top: 6px;
 }
 
+@media only screen and (max-width:600px) {
+  #contact{
+    height: max-content;
+    padding-bottom: 100px;
+  }
+  #c1{
+  padding-left:0px;
+  padding-bottom:40px;
+}
+#c2{
+  margin-top: 20px !important ;
+}
+input,textarea{
+  width: 250px;
+}
+}
 
 /* animation */
 @keyframes hide {
