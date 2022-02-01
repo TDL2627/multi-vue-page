@@ -1,7 +1,7 @@
 <template>
   <div id="projects">
     <h1>PROJECTS</h1>
-           <div class="box sb1">Browse left and right(refresh if error)</div>
+           <div class="box sb1">Browse left and right(refresh if nothing shows)</div>
 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">

@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import Test from '@/components/Experience-c.vue';
+import Test from '@/components/Testimonials-c.vue';
 
 export default {
   components: {

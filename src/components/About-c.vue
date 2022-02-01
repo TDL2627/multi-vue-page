@@ -9,13 +9,13 @@
 <h3>Description</h3>
 <div class="text">
 <p>
-  I am a smart, hard working person and very eager to learn.      
+  I am a smart, hardworking person and very eager to learn.       
   I love solving problems,
-    I am accustomed to traveling alot and speak multiple languages which allows me to mix and work well with others.I am very passionate about everything I do and take pride in what I do.
+    I am accustomed to traveling a lot and speak multiple languages which allows me to mix and work well with others. I am very passionate about everything I do and take pride in what I do.
 </p>
 <br>
 <p>
-  I have 3 years of coding experience which I have acquired via self-learning, tertiary institutions and multiple work enviroments.I find coding very interesting and beleive it is my super power.
+  I have 3 years of coding experience which I have acquired via self-learning, tertiary institutions and multiple work environments. I find coding very interesting and believe it is my super power.
 </p>
 <br>
 <p>

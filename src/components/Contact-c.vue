@@ -24,7 +24,7 @@
 
            </div>
             <div class="col-lg-6">
-              <h3>Other ways</h3>
+              <h3>Contact Details</h3>
               <div id="c2">
                 
               <h5>Address : </h5>
