@@ -57,6 +57,7 @@ h5{
  background:linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../assets/bg.png");
   padding-bottom: 100px;
  padding-top: 8%;
+ width: 100%;
 
 }
 .testimonials{
