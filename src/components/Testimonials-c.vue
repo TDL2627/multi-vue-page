@@ -5,7 +5,7 @@
   <div class="container">
     <div class="row">
 <div class="col-lg-4 testimonials" v-for="person in people" :key="person.name">
- <img class="piks" :src="person.pic">
+ <img class="piks" :src="require('@/assets/people/'+ person.pic)">
       <div class="content">
         <h3 >
           {{ person.name }}
@@ -31,17 +31,18 @@ export default {
 data(){
   return{
     people:[
-      {name:"Godwin",title:"Head of Curriculum and Learning",pic:require('@/assets/people/Godwin.jpeg'),qoute:" 'Based on the time that I have known Ashley, he will measure up to high organisational expectations.'"},
-       {name:"Jason",title:"Lecturer ",pic:require('@/assets/people/jason-wandrag-nobg-2.png'),qoute: "'Ashley brings a unique energy to my class. He enjoys participating in class activities. It's always great to see him well-behaved in my class. I am excited about Ashley's potential and I can't wait to see how he will grow in the future.'"},
-        {name:"Sibabalo",title:"Web Developer",pic:require('@/assets/people/sibablo.jpg'),qoute:" 'A very creative and resourceful person. A great team player.'"},
-       {name:"Jude",title:"Aspiring Web Developer",pic:require('@/assets/people/Jude3.jpg'),qoute:" 'He knows what is he doing.'"},
-        
-          {name:"Bulela",title:"Aspiring Web Developer",pic:require('@/assets/people/Bulela1.jpg'),qoute:"' He can work well with others.'"},
-           {name:"Kischa",title:"Graphic Designer",pic:require('@/assets/people/Kischa4.jpg'),qoute:"'He is very creative and has a great imagination.'"},
+      
 
     ]
   }
 }
+,
+  created(){
+    fetch('https://portfolio-api2627.herokuapp.com/testimonials')
+    .then((res) => res.json())
+    .then(data => this.people = data )
+    .catch(err => console.log(err.message))
+  },
 }
 </script>
 
