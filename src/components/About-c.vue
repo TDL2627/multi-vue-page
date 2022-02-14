@@ -72,6 +72,7 @@
             </g>
           </g>
         </svg></a>
+        <!-- <a href="@/assets/Resume.pdf">Download</a> -->
  </div>
 </div>
 <div class="container two">
@@ -193,8 +194,12 @@ p{
  height: 100% !important;
  padding-bottom: 50px;
 }
+.sidelinker{
+   padding-bottom: 50px !important;
+}
 .iconz{
   display: initial !important;
+ padding-bottom: 20px;
 }
 .cod1,.cod2{
   width: 100%;

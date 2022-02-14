@@ -6,7 +6,7 @@
   <div class="carousel-inner">
     <div class="carousel-item active">
       <img src="../assets/project/reactor.png" class="project-image" alt="image">
-      <p class="iden">0/16</p>
+
       <h2>Reactor</h2>
       <h4>Moderate</h4>
       <p>A reaction game made with VUEjs.</p>
@@ -18,7 +18,7 @@
     </div>
     <div class="carousel-item" v-for="(project,index) in filteredprojects" :key="project.title">
     <img :src="require('@/assets/project/'+ project.img)" class="project-image">
-     <p class="iden">{{index}}/16</p>
+     <p class="iden">{{index+1}}/16</p>
       <div class="content">
         <h2 class="project-title">
           {{ project.title }}
@@ -44,6 +44,17 @@
     <span class="visually-hidden">Next</span>
   </button>
 </div>
+
+<!-- 
+       <h3>Filter By Category</h3> 
+        <select v-model="level">
+            <option value="Simple">Simple</option>
+            <option value="Moderate">Moderate</option>
+            <option value="Stationary">Stationary</option>
+        </select> 
+        <ul>
+            <li v-for="project in filterProductsByCategory" :key="project.title">Product Name : {{project.title}} - Price : {{project.level}} ({{project.level}})</li>
+        </ul> -->
 
   </div>
   
@@ -88,7 +99,10 @@ export default {
        
         
         return tempprojects
-  }
+  },
+    filterProductsByCategory: function(){
+                return this.projects.filter(project => !project.level.indexOf(this.level))
+            }
 }
 };
 </script>

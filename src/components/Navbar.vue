@@ -145,6 +145,11 @@ button{
 #offie{
   display: initial;
 }
-
+.btn-check:focus + .btn-primary, .btn-primary:focus {
+    color: #fff;
+     background-color: none; 
+     border-color: #280549 !important; 
+    box-shadow: 0 0 0 0.25rem rgb(49 132 253 / 50%);
+}
 }
 </style>

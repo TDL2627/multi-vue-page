@@ -1,5 +1,5 @@
 <template>
-<div id="contact">
+<!-- <div id="contact">
     
        <div class="box sb1">Message me</div>
        <div class="container">
@@ -46,13 +46,45 @@
 </div>
 
 
-
-
+ -->
+<div id="contact">
+<h1>Contact</h1>
+<form @submit.prevent="handleSubmit">
+<input type="text" placeholder="name" v-model="name">
+  <input type="email" placeholder="email" v-model="email">
+  <input type="text" placeholder="message" v-model="message">
+  <button type="submit">Submit</button>
+</form>
+</div>
 </template>
 
 <script>
 export default {
-  
+  data(){
+    return{
+  name:"",
+  email:"",
+  message:""
+    }
+
+  },
+  methods:{
+    handleSubmit(){
+      fetch('https://contact2627.herokuapp.com/contact', {
+  method: 'POST',
+  body: JSON.stringify({
+    name: this.name,
+  email: this.email,
+    message: this.message
+  }),
+  headers: {
+    'Content-type': 'application/json; charset=UTF-8',
+  },
+})
+  .then((response) => response.json())
+  .then((json) => console.log(json));
+    }
+  }
 
 }
 
@@ -138,7 +170,7 @@ input,textarea{
 
 @media only screen and (max-width:600px) {
   #contact{
-    height: max-content;
+    height: 100vh ;
     padding-bottom: 100px;
   }
   #c1{
