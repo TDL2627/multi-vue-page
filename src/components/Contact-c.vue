@@ -1,5 +1,5 @@
 <template>
-<!-- <div id="contact">
+<div id="contact">
     
        <div class="box sb1">Message me</div>
        <div class="container">
@@ -8,17 +8,18 @@
              
              <h3 class="kop">Message Me :</h3>
              <div id="c1">
-<form target="_blank" action="https://formspree.io/f/mleavgwr" method="POST">
+<form @submit.prevent="handleSubmit">
               <br>
-               <input name="fname" type="text" placeholder="Name" required>
-                <input name="email" type="email" placeholder="Email" required> 
+               <input name="fname" type="text" placeholder="Name" v-model="name" required>
+                <input name="email" type="email" placeholder="Email" v-model="email" required> 
 
             <textarea name="messages" id="areatxt" cols="30" rows="8"
-                  placeholder="Type your message" required></textarea> 
+                  placeholder="Type your message" v-model="message" required></textarea> 
               <div style="display:flex"> 
                 <button class="send-but buttunz" type="submit">Send</button>
                 <button  class=" buttunz" type="reset" value="Reset">Reset</button>
               </div>
+              <p>{{success}}</p>
             </form>
              </div>
 
@@ -45,17 +46,6 @@
  
 </div>
 
-
- -->
-<div id="contact">
-<h1>Contact</h1>
-<form @submit.prevent="handleSubmit">
-<input type="text" placeholder="name" v-model="name">
-  <input type="email" placeholder="email" v-model="email">
-  <input type="text" placeholder="message" v-model="message">
-  <button type="submit">Submit</button>
-</form>
-</div>
 </template>
 
 <script>
@@ -64,7 +54,8 @@ export default {
     return{
   name:"",
   email:"",
-  message:""
+  message:"",
+  success:''
     }
 
   },
@@ -82,7 +73,15 @@ export default {
   },
 })
   .then((response) => response.json())
-  .then((json) => console.log(json));
+
+  .then((json) => {
+    console.log(json)
+    console.log(json.msg)
+    this.success = json.msg; 
+    this.name = '',
+    this.email = '',
+    this.message = ''
+  });
     }
   }
 
@@ -151,7 +150,6 @@ input,textarea{
   position: fixed;
   top: 125px;
   right: 25px;
-
   animation: hide 1s linear 2s 1 forwards;
 }
 
@@ -168,9 +166,9 @@ input,textarea{
   top: 6px;
 }
 
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:700px) {
   #contact{
-    height: 100vh ;
+    height: max-content ;
     padding-bottom: 100px;
   }
   #c1{
