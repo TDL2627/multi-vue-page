@@ -45,16 +45,7 @@
   </button>
 </div>
 
-<!-- 
-       <h3>Filter By Category</h3> 
-        <select v-model="level">
-            <option value="Simple">Simple</option>
-            <option value="Moderate">Moderate</option>
-            <option value="Stationary">Stationary</option>
-        </select> 
-        <ul>
-            <li v-for="project in filterProductsByCategory" :key="project.title">Product Name : {{project.title}} - Price : {{project.level}} ({{project.level}})</li>
-        </ul> -->
+<!-- 6 -->
 
   </div>
   

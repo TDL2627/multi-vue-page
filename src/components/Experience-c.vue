@@ -14,13 +14,13 @@
                 </div>
                 <div class="swiper-pagination" style="cursor: move;"> </div>
             </div>
-            
        </section>
        <div class="box sb1">Scroll Right</div>
        </div>
 </template>
 
 <script>
+
 export default {
 data(){
   return{
@@ -36,7 +36,8 @@ data(){
 
     ]
   }
-}
+},
+
 }
 </script>
 

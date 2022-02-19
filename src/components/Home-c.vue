@@ -6,10 +6,9 @@
   <h1 id="into">Welcome</h1>
 </div>
     <div id="wordz">
- <h1 id="one">I am</h1>
- <h1 id="two">Abdul-Malik</h1>
-  <h1 id="four"> A Full Stack </h1>
- <h1 id="five">Web Developer</h1>
+ <h1 id="one">I am a</h1>
+ <h1 id="two">Full Stack</h1>
+  <h1 id="four"> Web Developer </h1>
    <router-link class="buttunz" to="/about">Let's Go</router-link>
     </div>
 

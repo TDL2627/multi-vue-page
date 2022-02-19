@@ -106,7 +106,7 @@
 <p>Cape Town</p>
 
 </div>
-  
+  <a target="_blank" href="https://drive.google.com/file/d/1mnPMRPGjD4Pc6yJ5BCFH1xn33WxTJ-x0/view?usp=sharing">Download CV</a>
 </div>
 
 </div>
