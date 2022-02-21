@@ -28,7 +28,7 @@
 <h3>Details</h3>
 <div class="three">
   <img class="mini" src="../assets/people/me.jpg" alt="me">
-  <p>NAME   : Abdul-Malik </p> 
+  <p>NAME   : Ashley </p> 
 
 <br>
 <p>SURNAME: Kannemeyer</p>
@@ -37,7 +37,7 @@
 <p class="email">EMAIL  : ashleykannemeyer2@gmail.com</p> 
 
 <br>
-<p>AGE    : 21</p>
+<p>D.O.B  : 2000/05/07</p>
 
 <br>
 <p>FROM   : Cape Town</p>
@@ -86,7 +86,7 @@
 <br>
 <p>EMAIL  :</p>
 <br>
-<p>AGE    :</p>
+<p>D.O.B  :</p>
 <br>
 <p>FROM   :</p>
 
@@ -101,12 +101,12 @@
 <br>
 <p>ashleykannemeyer2@gmail.com</p>
 <br>
-<p>21</p>
+<p>2000/05/07</p>
 <br>
 <p>Cape Town</p>
 
 </div>
-  <a target="_blank" href="https://drive.google.com/file/d/1mnPMRPGjD4Pc6yJ5BCFH1xn33WxTJ-x0/view?usp=sharing">Download CV</a>
+  <a class="buttun" target="_blank" href="https://drive.google.com/file/d/1mnPMRPGjD4Pc6yJ5BCFH1xn33WxTJ-x0/view?usp=sharing">Download CV</a>
 </div>
 
 </div>
@@ -187,6 +187,23 @@ p{
 }
 .page{
     margin-top:0;
+}
+.buttun{
+  background-color:#240046  ;
+border:2px solid #FF7900;
+color: white;
+
+margin: 5px;
+padding: 5px;
+text-decoration: none;
+border-radius: 25px;
+}
+.buttun:hover{
+  background-color: white;
+  color: #FF7900;
+  -webkit-box-shadow: -11px 5px 15px 5px #FF7900; 
+box-shadow: -11px 5px 15px 5px #FF7900;
+
 }
 /* media query */
 @media only screen and (max-width: 600px) {

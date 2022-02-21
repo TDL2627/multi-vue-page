@@ -1,12 +1,13 @@
 <template>
 <div id="contact">
-    
+             <h1>Contact me</h1>
        <div class="box sb1">Message me</div>
        <div class="container">
+
+        
          <div class="row">
            <div class="col-lg-6 c1">
-             
-             <h3 class="kop">Message Me :</h3>
+       
              <div id="c1">
 <form @submit.prevent="handleSubmit">
               <br>
@@ -25,7 +26,7 @@
 
            </div>
             <div class="col-lg-6">
-              <h3 class="kop">Contact Details</h3>
+         
               <div id="c2">
                 
               <h5>Address : </h5>
@@ -49,7 +50,7 @@
                </div>
          </div>
        </div>
- 
+
 </div>
 
 </template>
@@ -91,15 +92,20 @@ export default {
     }
   }
 
+
 }
 
 </script>
 
 <style scoped>
+
+
+
 h1,h3{
    color: #ff7900;
   text-decoration: underline 2px white ;
 }
+
 h5{
   color: #ff7900;
 }
@@ -108,16 +114,13 @@ p{
 }
 #contact{
       background:linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../assets/bg.png");
-     height: 100vh;
-    padding-top: 8%;
+     height: max-content;
     
 }
 #c1{
  padding-left: 20% !important;
 }
-#c2{
-  margin-top: 50px !important ;
-}
+
 form {
     max-width: 420px;
   margin: 0;
@@ -192,7 +195,7 @@ input,textarea{
 #contact{
       background:linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../assets/bg.png");
      height: 100vh;
-     padding-top: 10%;
+     padding-top: 7%;
     
 }
 }

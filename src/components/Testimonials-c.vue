@@ -59,7 +59,7 @@ h5{
   padding-bottom: 100px;
  padding-top: 8%;
  width: 100%;
-
+height: max-content;
 }
 .testimonials{
   height: 400px;
