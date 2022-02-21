@@ -72,7 +72,8 @@
             </g>
           </g>
         </svg></a>
-        <!-- <a href="@/assets/Resume.pdf">Download</a> -->
+  <a class="buttun" target="_blank" href="https://drive.google.com/file/d/1mnPMRPGjD4Pc6yJ5BCFH1xn33WxTJ-x0/view?usp=sharing">Download CV</a>
+
  </div>
 </div>
 <div class="container two">
@@ -95,7 +96,7 @@
 
 
 <div class="col-8">
-<p>Abdul-Malik</p>
+<p>Ashley</p>
 <br>
 <p>Kannemeyer</p>
 <br>

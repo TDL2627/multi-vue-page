@@ -8,14 +8,30 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide" v-for="resume of resumes" :key="resume.title">
                       <div class="timestamp"><span class="date">{{resume.date}}</span></div>
-                      <div class="status"><span>{{resume.details}}</span></div>
+                      <div class="status"><span><div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+   High School
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+   <li>Bridge Town High</li>
+   <hr>
+   <li>Bachelor's Degree</li>
+   <hr>
+   <p>
+Maths, Physics,Life Science, Geography,Afrikaans, English
+   </p>
+
+  </div>
+</div></span></div>
                     </div>
               
                 </div>
                 <div class="swiper-pagination" style="cursor: move;"> </div>
             </div>
        </section>
-       <div class="box sb1">Scroll Right</div>
+       <div class="box sb1">Scroll Right and Scroll Down</div>
+
+    
        </div>
 </template>
 
@@ -42,6 +58,17 @@ data(){
 </script>
 
 <style scoped>
+.swiper-wrapper{
+  height:300px !important;
+}
+.dropdown-menu{
+  z-index: 262736737;
+  padding:15px;
+  width: 300px;
+}
+button{
+  background-color:#ff7900 !important;
+}
 h1{
  padding-top: 3%;
   color: #ff7900;
@@ -55,9 +82,9 @@ h1{
  background:linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../assets/bg.png");
 }
 .time-line-box {
-  margin-top: 90px;
-  height: 300px; 
-  padding: 100px 0;
+  margin-top: 5%;
+  height: 60%; 
+  padding-top: 40px;
   width: 100%;
 background: rgba( 144, 19, 254, 0.45 );
 box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
@@ -124,6 +151,7 @@ span{
   flex-direction: row;
   overflow-y:auto;
   justify-content: center;
+
 }
 .swiper-container::-webkit-scrollbar-track{
    background:#a8a8a8b6;
@@ -180,7 +208,9 @@ span{
   right: -19px;
   top: 6px;
 }
-
+/* .swiper-pagination{
+  margin-top:15%;
+} */
 /* media query */
 @media only screen and (max-width: 600px) {
 #exp{
