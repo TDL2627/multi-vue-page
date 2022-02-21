@@ -10,15 +10,15 @@
                       <div class="timestamp"><span class="date">{{resume.date}}</span></div>
                       <div class="status"><span><div class="dropdown">
   <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-   High School
+ {{resume.but}}
   </button>
   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-   <li>Bridge Town High</li>
+   <li>{{resume.title}}</li>
    <hr>
-   <li>Bachelor's Degree</li>
+   <li>{{resume.job}}</li>
    <hr>
    <p>
-Maths, Physics,Life Science, Geography,Afrikaans, English
+{{resume.details}}
    </p>
 
   </div>
@@ -41,7 +41,7 @@ export default {
 data(){
   return{
     resumes:[
-      {date:"01/2013",details:"Enrolled into high school."},
+      {date:"01/2013",details:"Enrolled into high school.",title:"Bridge Town High",but:"High School",job:"Bachelor's Degree"},
             {date:"11/2017",details:"Matriculated + part time catering work."},
                   {date:"01/2018",details:"Become a full time general worker."},
                         {date:"12/2019",details:"Still doing general labour."},
