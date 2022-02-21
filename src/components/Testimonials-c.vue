@@ -4,7 +4,7 @@
    <div class="box sb1">Scroll down</div>
   <div class="container">
     <div class="row">
-<div class="col-lg-4 testimonials" v-for="person in people" :key="person.name">
+<div class="col-lg-4 col-sm-12 testimonials" v-for="person in people" :key="person.name">
  <img class="piks" :src="require('@/assets/people/'+ person.pic)">
       <div class="content">
         <h3 >
@@ -58,7 +58,7 @@ h5{
  background:linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../assets/bg.png");
   padding-bottom: 100px;
  padding-top: 8%;
- width: 100%;
+ width: 100vw;
 height: max-content;
 }
 .testimonials{
@@ -118,23 +118,26 @@ p{
   top: 6px;
 }
 .container{
-  margin-left: 15%;
+margin-left: 10%;
 }
 /* media query */
 @media only screen and (max-width: 600px) {
 #testi{
   padding-bottom: 50px;
   padding-top: 50px;
-   padding-left: 5%;
-  padding-right:5%;
+width: 100%;
 }
 .testimonials{
   margin: 20px;
+  margin-left: 35px;
   width:250px; 
 }
 .piks{
   height: 200px;
   width: 250px;
+}
+.container{
+margin:0;
 }
 }
 
