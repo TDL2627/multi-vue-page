@@ -10,11 +10,11 @@
                       <div class="timestamp"><span class="date">{{resume.date}}</span></div>
                       <div class="status"><span><div class="dropdown">
   <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
- {{resume.but}}
+ {{resume.title}}
   </button>
   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-   <li>{{resume.title}}</li>
-   <hr>
+
+ 
    <li>{{resume.job}}</li>
    <hr>
    <p>
@@ -41,14 +41,14 @@ export default {
 data(){
   return{
     resumes:[
-      {date:"01/2013",details:"Enrolled into high school.",title:"Bridge Town High",but:"High School",job:"Bachelor's Degree"},
-            {date:"11/2017",details:"Matriculated + part time catering work."},
-                  {date:"01/2018",details:"Become a full time general worker."},
-                        {date:"12/2019",details:"Still doing general labour."},
-             {date:"06/2020",details:"Enrolled at CodeSpace."},
-                   {date:"01/2021",details:"Uber Eats driver."},
-       {date:"04/2021",details:"Developed microapps for Ayoba."},
-             {date:"09/2021",details:"Enrolled at Life Choices"}                            
+      {date:"11/2017",details:"Maths, Physics, Life Sciences, Geography, English, Afrikaans",title:"Bridge Town High",but:"High School",job:"Bachelor's Degree"},
+            {date:"12/2017",details:"Done events such as weddings and parties.",title:"Lola Fine",but:"Catering",job:"Waiter"},
+                  {date:"01/2018",details:"Pulling sails and moving equipment.",title:"Ulman Sails",but:"General work",job:"Floor Worker"},
+                        {date:"12/2019",details:"Done general labour and odd jobs.",title:"Durban Overall",but:"General work",job:"General Worker"},
+             {date:"06/2020",details:"Learnt MySQL, HTML, PHP,Javascript and CSS.",title:"Code Space",but:"Full Stack Learning",job:"Student"},
+                   {date:"01/2021",details:"Delivered food on a motorbike.",title:"Uber Eats",but:"Driving",job:"Delivery Man"},
+       {date:"04/2021",details:"Developed microapps for Ayoba.",title:"The Digital Academy",but:"Developer",job:"Software Developer"},
+             {date:"09/2021",details:"Learning full stack languages such as HTML, CSS, Javascript, MySQL, VUE js, NODE js and Mongo DB.",title:"Life Choices",but:"General work",job:"Student"}                            
 
     ]
   }
