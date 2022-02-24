@@ -115,12 +115,14 @@ p{
 #contact{
       background:linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../assets/bg.png");
      height: max-content;
-    
+     padding-top: 7%;
 }
 #c1{
  padding-left: 20% !important;
 }
-
+#c2{
+  padding-top:25px;
+}
 form {
     max-width: 420px;
   margin: 0;
@@ -179,6 +181,7 @@ input,textarea{
   #contact{
     height: max-content ;
     padding-bottom: 100px;
+      padding-top: 15%;
   }
   #c1{
    padding-left: 10%;
@@ -195,7 +198,7 @@ input,textarea{
 #contact{
       background:linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../assets/bg.png");
      height: 100vh;
-     padding-top: 7%;
+   
     
 }
 }

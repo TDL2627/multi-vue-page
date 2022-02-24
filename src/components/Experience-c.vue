@@ -29,8 +29,7 @@
                 <div class="swiper-pagination" style="cursor: move;"> </div>
             </div>
        </section>
-       <div class="box sb1">Scroll Right and Scroll Down</div>
-
+       <div class="box sb1">Scroll Right and click on the button for more info</div>
     
        </div>
 </template>

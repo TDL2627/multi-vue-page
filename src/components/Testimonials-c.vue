@@ -58,7 +58,8 @@ h5{
  background:linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../assets/bg.png");
   padding-bottom: 100px;
  padding-top: 8%;
- width: 100vw;
+ width: 100%;
+ overflow-x: hidden ;
 height: max-content;
 }
 .testimonials{
@@ -78,6 +79,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
   height: 200px;
   background-color: white;
   width: 300px;
+   object-fit: cover;
 }
 h3{
   color: white;
@@ -125,6 +127,7 @@ margin-left: 10%;
 #testi{
   padding-bottom: 50px;
   padding-top: 50px;
+  overflow: hidden;
 width: 100%;
 }
 .testimonials{
