@@ -133,7 +133,8 @@ margin-left: 10%;
 #testi{
   padding-bottom: 50px;
   padding-top: 50px;
-  overflow: hidden;
+ height: 100vh;
+overflow-y:scroll;
 width: 100%;
 }
 .testimonials{
