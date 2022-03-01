@@ -114,7 +114,8 @@ p{
 }
 #contact{
       background:linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../assets/bg.png");
-     height: max-content;
+     height: 100vh;
+  
      padding-top: 7%;
 }
 #c1{

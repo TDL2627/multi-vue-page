@@ -1,5 +1,6 @@
 <template>
 <div id="testi">
+  <the-loader></the-loader>
  <h1 class="kop">TESTIMONIALS</h1>
    <div class="box sb1">Scroll down</div>
   <div class="container">
@@ -27,7 +28,11 @@
 </template>
 
 <script>
+import TheLoader from "@/components/TheLoader.vue";
 export default {
+components:{
+  TheLoader
+},
 data(){
   return{
     people:[
@@ -60,7 +65,8 @@ h5{
  padding-top: 8%;
  width: 100%;
  overflow-x: hidden ;
-height: max-content;
+height: 100vh;
+overflow-y:scroll;
 }
 .testimonials{
   height: 400px;
