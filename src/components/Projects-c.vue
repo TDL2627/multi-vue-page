@@ -1,5 +1,6 @@
 <template>
   <div id="projects">
+     <the-loader></the-loader>
     <h1 class="kop">PROJECTS</h1>
            <div class="box sb1">Browse left and right(refresh if nothing shows)</div>
 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
@@ -53,7 +54,11 @@
 </template>
 
 <script>
+import TheLoader from "@/components/TheLoader.vue";
 export default {
+components:{
+  TheLoader
+},
   data() {
     return {
       sortBy: 'alphabetically',

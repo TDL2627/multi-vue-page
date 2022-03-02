@@ -36,7 +36,7 @@ export default {
   width: 13px;
   height: 13px;
   border-radius: 50%;
-  background: #fff;
+  background: #ff7900;
   animation-timing-function: cubic-bezier(0, 1, 1, 0);
 }
 .lds-ellipsis div:nth-child(1) {
@@ -56,7 +56,7 @@ export default {
   animation: lds-ellipsis3 0.6s infinite;
 }
  .disamess{
-   animation: hideAnimation 0s ease-in 2s;
+   animation: hideAnimation 0s ease-in 5s;
   animation-fill-mode: forwards;
  }
  @keyframes hideAnimation {
