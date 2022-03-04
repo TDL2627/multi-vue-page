@@ -157,6 +157,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 .project-image{
   height: 250px;
+  object-fit: cover;
 }
 a{
   width: 150px !important;
