@@ -136,6 +136,9 @@ h4{
 h2,p{
   color:white;
 }
+.content{
+  overflow-y: scroll;
+}
 .carousel{
   background: rgba( 255, 106, 4, 0.45 );
 box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
@@ -158,6 +161,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 .project-image{
   height: 250px;
   object-fit: cover;
+  margin-left: 10%;
 }
 a{
   width: 150px !important;
@@ -206,7 +210,10 @@ a{
 }
 .project-image{
   height: 200px;
+  margin-left: 0;
+  width: 100%;
 }
+
 p{
   height: 50px;
 overflow-x: hidden;  
