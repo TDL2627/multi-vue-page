@@ -7,7 +7,7 @@
   <div class="carousel-inner">
     <div class="carousel-item active">
       <img src="../assets/project/reactor.png" class="project-image" alt="image">
-
+<p class="iden">1/24</p>
       <h2>Reactor</h2>
       <h4>Moderate</h4>
       <p>A reaction game made with VUEjs.</p>
@@ -19,7 +19,7 @@
     </div>
     <div class="carousel-item" v-for="(project,index) in filteredprojects" :key="project.title">
     <img :src="require('@/assets/project/'+ project.img)" class="project-image">
-     <p class="iden">{{index+1}}/16</p>
+     <p class="iden">{{index+2}}/24</p>
       <div class="content">
         <h2 class="project-title">
           {{ project.title }}
