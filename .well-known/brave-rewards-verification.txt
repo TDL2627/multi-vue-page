@@ -1,4 +1,0 @@
-This is a Brave Rewards publisher verification file.
-
-Domain: portfolio2627-53bc0.web.app
-Token: d7272e9cb24c7fba0ae27025f9832f68f98c9d301f04890864743685903e5887
