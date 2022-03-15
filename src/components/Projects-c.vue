@@ -243,7 +243,7 @@ overflow-x: hidden;
   overflow-y: hidden;
 }
 #link{
-  margin-left: 25%;
+  margin-left: 45%;
 }
 }
 
