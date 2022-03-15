@@ -1,5 +1,11 @@
 <template>
 <div id="contact">
+   <div v-if="loading" >
+ <div class="half-circle-spinner">
+  <div class="circle circle-1"></div>
+  <div class="circle circle-2"></div>
+</div>
+</div>
              <h1>Contact me</h1>
        <div class="box sb1">Message me</div>
        <div class="container">
@@ -20,7 +26,6 @@
                 <button class="send-but buttunz" type="submit">Send</button>
                 <button  class=" buttunz" type="reset" value="Reset">Reset</button>
               </div>
-              <p>{{success}}</p>
             </form>
              </div>
 
@@ -62,16 +67,19 @@ export default {
   name:"",
   email:"",
   message:"",
-  success:''
+  loading:false
     }
 
   },
   methods:{
-    handleSubmit(){
-      fetch('https://contact2627.herokuapp.com/contact', {
+     
+  async  handleSubmit(){
+    this.loading = true
+    try{
+ fetch('https://contact2627.herokuapp.com/contact', {
   method: 'POST',
   body: JSON.stringify({
-    name: this.name,
+  name: this.name,
   email: this.email,
     message: this.message
   }),
@@ -79,17 +87,20 @@ export default {
     'Content-type': 'application/json; charset=UTF-8',
   },
 })
-  .then((response) => response.json())
-
   .then((json) => {
-    console.log(json)
-    console.log(json.msg)
-    this.success = json.msg; 
-    this.name = '',
+     this.loading = false
+    alert("Message Sent")
+   this.name = '',
     this.email = '',
     this.message = ''
   });
     }
+  catch(err)  {
+          alert(err);
+          this.loading = false
+        }
+  }
+
   }
 
 
@@ -177,6 +188,49 @@ input,textarea{
   right: -19px;
   top: 6px;
 }
+/* loader */
+.half-circle-spinner, .half-circle-spinner * {
+      box-sizing: border-box;
+      z-index: 2345678999999876543;
+    }
+
+    .half-circle-spinner {
+      width: 60px;
+      height: 60px;
+      border-radius: 100%;
+     position: fixed;
+      top:45%;
+      left: 50%;
+    }
+
+    .half-circle-spinner .circle {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 100%;
+      border: calc(60px / 10) solid transparent;
+    }
+
+    .half-circle-spinner .circle.circle-1 {
+      border-top-color: #FF7900;
+      animation: half-circle-spinner-animation 1s infinite;
+    }
+
+    .half-circle-spinner .circle.circle-2 {
+      border-bottom-color: #240046;
+      animation: half-circle-spinner-animation 1s infinite alternate;
+    }
+
+    @keyframes half-circle-spinner-animation {
+      0% {
+        transform: rotate(0deg);
+
+      }
+      100%{
+        transform: rotate(360deg);
+      }
+    }
 
 @media only screen and (max-width:700px) {
   #contact{
