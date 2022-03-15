@@ -177,8 +177,6 @@ a{
   top: 6px;
 }
 /* loader */
-
-/* loader */
 .half-circle-spinner, .half-circle-spinner * {
       box-sizing: border-box;
       z-index: 2345678999999876543;

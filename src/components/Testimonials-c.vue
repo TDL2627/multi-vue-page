@@ -1,6 +1,12 @@
 <template>
 <div id="testi">
-  <the-loader></the-loader>
+  <div v-if="loading" >
+ <div class="half-circle-spinner">
+  <div class="circle circle-1"></div>
+  <div class="circle circle-2"></div>
+</div>
+</div>
+
  <h1 class="kop">TESTIMONIALS</h1>
    <div class="box sb1">Scroll down</div>
   <div class="container">
@@ -28,26 +34,25 @@
 </template>
 
 <script>
-import TheLoader from "@/components/TheLoader.vue";
 export default {
-components:{
-  TheLoader
-},
+
 data(){
   return{
-    people:[
-      
-
-    ]
+    people:[],
+    loading:false
   }
-}
-,
-  created(){
-    fetch('https://portfolio-api2627.herokuapp.com/testimonials')
-    .then((res) => res.json())
-    .then(data => this.people = data )
-    .catch(err => console.log(err.message))
-  },
+},
+async created () {
+    this.loading = true
+    try {
+      const res = await fetch('https://portfolio-api2627.herokuapp.com/testimonials')
+      this.people = await res.json()
+      this.loading = false
+    } catch (error) {
+      console.log(error)
+      this.loading = false
+    }
+  }
 }
 </script>
 
@@ -128,6 +133,49 @@ p{
 .container{
 margin-left: 10%;
 }
+/* loader */
+.half-circle-spinner, .half-circle-spinner * {
+      box-sizing: border-box;
+      z-index: 2345678999999876543;
+    }
+
+    .half-circle-spinner {
+      width: 60px;
+      height: 60px;
+      border-radius: 100%;
+     position: fixed;
+      top:45%;
+      left: 50%;
+    }
+
+    .half-circle-spinner .circle {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 100%;
+      border: calc(60px / 10) solid transparent;
+    }
+
+    .half-circle-spinner .circle.circle-1 {
+      border-top-color: #FF7900;
+      animation: half-circle-spinner-animation 1s infinite;
+    }
+
+    .half-circle-spinner .circle.circle-2 {
+      border-bottom-color: #240046;
+      animation: half-circle-spinner-animation 1s infinite alternate;
+    }
+
+    @keyframes half-circle-spinner-animation {
+      0% {
+        transform: rotate(0deg);
+
+      }
+      100%{
+        transform: rotate(360deg);
+      }
+    }
 /* media query */
 @media only screen and (max-width: 600px) {
 #testi{
