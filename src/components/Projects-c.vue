@@ -1,6 +1,11 @@
 <template>
   <div id="projects">
-     <the-loader></the-loader>
+   <div v-if="loading" >
+ <div class="half-circle-spinner">
+  <div class="circle circle-1"></div>
+  <div class="circle circle-2"></div>
+</div>
+</div>
     <h1 class="kop">PROJECTS</h1>
            <div class="box sb1">Browse left and right(refresh if nothing shows)</div>
 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
@@ -17,7 +22,7 @@
   <a target="_blank" href="https://reactor2627.web.app/" class="buttun">Live</a>
 </div>
     </div>
-    <div class="carousel-item" v-for="(project,index) in filteredprojects" :key="project.title">
+    <div class="carousel-item" v-for="(project,index) in projects" :key="project.title">
     <img :src="require('@/assets/project/'+ project.img)" class="project-image">
      <p class="iden">{{index+2}}/24</p>
       <div class="content">
@@ -54,52 +59,25 @@
 </template>
 
 <script>
-import TheLoader from "@/components/TheLoader.vue";
 export default {
-components:{
-  TheLoader
-},
+
   data() {
     return {
-      sortBy: 'alphabetically',
-    projects: [ ]
+    projects: [ ],
+    loader:false
     };
   },
-  created(){
-    fetch('https://portfolio-api2627.herokuapp.com/projects')
-    .then((res) => res.json())
-    .then(data => this.projects = data )
-    .catch(err => console.log(err.message))
-  },
-  computed: {
-  filteredprojects() {
-    let tempprojects = this.projects
-    
-       
-    // Sort by alphabetical order
-        tempprojects = tempprojects.sort((a, b) => {
-            if (this.sortBy == 'alphabetically') {
-                let fa = a.title.toLowerCase(), fb = b.title.toLowerCase()
-          
-              if (fa < fb) {
-                return -1
-              }
-              if (fa > fb) {
-                return 1 
-              }
-              return 0
-              
-            } 
-        })
-    
-       
-        
-        return tempprojects
-  },
-    filterProductsByCategory: function(){
-                return this.projects.filter(project => !project.level.indexOf(this.level))
-            }
-}
+async created () {
+    this.loading = true
+    try {
+      const res = await fetch('https://portfolio-api2627.herokuapp.com/projects')
+      this.projects = await res.json()
+      this.loading = false
+    } catch (error) {
+      console.log(error)
+      this.loading = false
+    }
+  }
 };
 </script>
 
@@ -127,7 +105,7 @@ h1{
   text-decoration: underline 2px white ;
 }
 .iden{
-  float: right;
+  float: left;
   padding: 20px;
 }
 h4{
@@ -161,7 +139,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 .project-image{
   height: 250px;
   object-fit: cover;
-  margin-left: 10%;
+  margin-left: -5%;
 }
 a{
   width: 150px !important;
@@ -183,7 +161,7 @@ a{
   top: 125px;
   right: 25px;
 
-  animation: hide 1s linear 2s 1 forwards;
+  animation: hide 2s linear 2s 1 forwards;
 }
 
 .sb1:before {
@@ -198,6 +176,51 @@ a{
   right: -19px;
   top: 6px;
 }
+/* loader */
+
+/* loader */
+.half-circle-spinner, .half-circle-spinner * {
+      box-sizing: border-box;
+      z-index: 2345678999999876543;
+    }
+
+    .half-circle-spinner {
+      width: 60px;
+      height: 60px;
+      border-radius: 100%;
+     position: fixed;
+      top:45%;
+      left: 50%;
+    }
+
+    .half-circle-spinner .circle {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 100%;
+      border: calc(60px / 10) solid transparent;
+    }
+
+    .half-circle-spinner .circle.circle-1 {
+      border-top-color: #FF7900;
+      animation: half-circle-spinner-animation 1s infinite;
+    }
+
+    .half-circle-spinner .circle.circle-2 {
+      border-bottom-color: #240046;
+      animation: half-circle-spinner-animation 1s infinite alternate;
+    }
+
+    @keyframes half-circle-spinner-animation {
+      0% {
+        transform: rotate(0deg);
+
+      }
+      100%{
+        transform: rotate(360deg);
+      }
+    }
 /* media query */
 @media only screen and (max-width: 600px) {
 #projects{
