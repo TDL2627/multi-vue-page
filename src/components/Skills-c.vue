@@ -110,7 +110,7 @@
     </div>
     <div class="flip-card-back">
       <h4>Vue</h4>
-      <h5>1 month</h5>
+      <h5>6 months</h5>
        <div class="progress1">
    <div class="progress-value1" style="width: 22%"><span>22%</span></div>
 </div>
