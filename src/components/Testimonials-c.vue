@@ -131,7 +131,7 @@ p{
   top: 6px;
 }
 .container{
-margin-left: 10%;
+width:80%;
 }
 /* loader */
 .half-circle-spinner, .half-circle-spinner * {
@@ -198,6 +198,7 @@ width: 100%;
 margin:0;
 }
 }
+
 
 /* animation */
 @keyframes hide {
