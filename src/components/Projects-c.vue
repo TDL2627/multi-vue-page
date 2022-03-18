@@ -31,7 +31,7 @@
         </h2>
         <h4> {{project.level}}</h4>
        
-        <p>
+        <p class="details">
           {{ project.description }}
         </p>
         <a :href="project.linkGit" target="_blank"  class="buttunz">GIT</a>
@@ -114,9 +114,7 @@ h4{
 h2,p{
   color:white;
 }
-.content{
-  overflow-y: scroll;
-}
+
 .carousel{
   background: rgba( 255, 106, 4, 0.45 );
 box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
