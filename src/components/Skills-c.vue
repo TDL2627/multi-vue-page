@@ -65,7 +65,8 @@
       <h5>6 months</h5>
      <div class="progress1">
    <div class="progress-value1" style="width: 41%"><span>41%</span></div>
-</div>
+</div> 
+
     </div>
   </div>
 </div>
