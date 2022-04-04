@@ -11,20 +11,20 @@
 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="../assets/project/reactor.png" class="project-image" alt="image">
-<p class="iden">1/25</p>
-      <h2>Reactor</h2>
+      <img src="../assets/project/riddle.png" class="project-image" alt="image">
+<p class="iden">1/26</p>
+      <h2>Riddle Game</h2>
       <h4>Moderate</h4>
-      <p>A reaction game made with VUEjs.</p>
+      <p>A riddle quiz game made with VUEjs.</p>
 <div  id="link"
  style="display:flex;">
-  <a target="_blank" href="https://github.com/TDL2627/ReactGame" class="buttun">Git</a>
-  <a target="_blank" href="https://reactor2627.web.app/" class="buttun">Live</a>
+  <a target="_blank" href="https://github.com/TDL2627/Riddles" class="buttun">Git</a>
+  <a target="_blank" href="https://riddles-73de4.web.app/" class="buttun">Live</a>
 </div>
     </div>
     <div class="carousel-item" v-for="(project,index) in projects" :key="project.title">
     <img :src="require('@/assets/project/'+ project.img)" class="project-image">
-     <p class="iden">{{index+2}}/25</p>
+     <p class="iden">{{index+2}}/26</p>
       <div class="content">
         <h2 class="project-title">
           {{ project.title }}
