@@ -113,7 +113,7 @@
       <h4>Vue</h4>
       <h5>6 months</h5>
        <div class="progress1">
-   <div class="progress-value1" style="width: 22%"><span>22%</span></div>
+   <div class="progress-value1" style="width: 56%"><span>56%</span></div>
 </div>
     </div>
   </div>
