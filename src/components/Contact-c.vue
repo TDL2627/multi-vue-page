@@ -40,14 +40,12 @@
               <p>0660400809</p>
               <h5>Email :</h5>
               <p>ashleykannemeyer2@gmail.com</p>
-              <ul>
-                <li>
-                    <h5>WhatsApp :</h5>
+              
+                  
               <a id="wapp" target="_blank" href="https://wa.me/27660400809"><img src="https://img.icons8.com/external-justicon-flat-justicon/64/000000/external-whatsapp-social-media-justicon-flat-justicon.png"/></a>
-              <h5>LinkedIn :</h5>
+         
               <a id="lapp" target="_blank" href="https://www.linkedin.com/in/ashley-kannemeyer-01b37121b/"><img src="https://img.icons8.com/external-justicon-flat-justicon/64/000000/external-linkedin-social-media-justicon-flat-justicon.png"/></a>
-                </li>
-              </ul>
+             
         
             
        
@@ -159,7 +157,9 @@ input,textarea{
     font-size: 0.8em;
     font-weight: bold;
 }
-
+#wapp,#lapp{
+  margin:50px;
+}
 /* tip */
 .box {
   width: 200px;
@@ -239,7 +239,7 @@ input,textarea{
       padding-top: 15%;
   }
   #c1{
-   padding-left: 10%;
+   padding-left: 10% !important;
   padding-bottom:40px;
 }
 #c2{
@@ -252,7 +252,7 @@ input,textarea{
 @media only screen and (min-height: 700px) {
 #contact{
       background:linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../assets/bg.png");
-     height: 100vh;
+     height: max-content;
    
     
 }
@@ -271,3 +271,4 @@ input,textarea{
   }
 }
 </style>
+
