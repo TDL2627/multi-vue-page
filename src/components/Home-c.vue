@@ -2,14 +2,12 @@
 
 
   <div class="home">
-    <div id="intro">
-  <h1 id="into">Welcome</h1>
-</div>
+  
     <div id="wordz">
- <h1 id="one">I am a</h1>
- <h1 id="two">Full Stack</h1>
-  <h1 id="four"> Web Developer </h1>
-   <router-link class="buttunz" to="/about">Let's Go</router-link>
+ <h1 id="one" class="animate__animated animate__lightSpeedInLeft  animate__delay-0.5s">I am a</h1>
+ <h1 id="two" class="animate__animated animate__rollIn  animate__delay-1s">Full Stack</h1>
+  <h1 id="four" class="animate__animated animate__flipInX  animate__delay-2s"> Web Developer </h1>
+   <router-link class="buttunz animate__animated animate__jackInTheBox animate__delay-4s" to="/about">Let's Go</router-link>
     </div>
 
 
@@ -33,6 +31,7 @@ export default {
 .home{
 background:linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../assets/bg.png");
  height: 100vh;
+ overflow: hidden;
  margin-top: 0px;
 }
 a{
@@ -45,47 +44,28 @@ a{
   color: #ff7900;
   border-radius: 25px;
   padding: 10px;
-  opacity: 0;
 
-    animation: showing 0s ease-in 4s forwards;
-    animation-name: slide-in-top;
-  animation-iteration-count: 1;
-  animation-duration: 2s;
-  animation-delay: 4s;
+
 }
 #divvie{
   display: inline-block;
 }
-#into{
-  margin-top:20%;
-}
+
 #one{
   color: white;
-  animation-name: slide-in-left;
-  animation-iteration-count: 1;
-  animation-duration: 1s;
-  animation-delay: 1s;
+
 }
 #two{
   color: #ff7900;
-  animation-name: slide-in-left;
-  animation-iteration-count: 1;
-  animation-duration: 2s;
-  animation-delay: 1s;
+
 }
 #four{
   color: white;
-    animation-name: slide-in-left;
-  animation-iteration-count: 1;
-  animation-duration: 3s;
-   animation-delay: 1s;
+
 }
 #five{
   color: #ff7900;
-  animation-name: slide-in-left;
-  animation-iteration-count: 1;
-  animation-duration: 4s;
-   animation-delay: 1s;
+
 }
 
 #wordz{
@@ -105,17 +85,7 @@ h1{
   bottom: 0;
   height: 800px;
 }
-#intro {
-background:linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../assets/bg.png");
-  height: 100vh;
-  width: 100vw;
-  position: fixed;
-  z-index: 284;
-padding-top: 0;
-  top: 0;
-  left: 0;
-    animation: hide 1s linear 1s 1 forwards;
-}
+
 
 
 /* media query */
