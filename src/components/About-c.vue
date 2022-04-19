@@ -2,7 +2,7 @@
   <div class="about">
 
     <div class="container page">
-     <h1 class="kop">ABOUT</h1>    
+     <h1 class="kop animate__animated animate__backInDown">ABOUT</h1>    
  
 <div class="row">
 <div class="col-lg-6 cod1">

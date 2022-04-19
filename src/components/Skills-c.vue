@@ -2,7 +2,7 @@
 <div id="skills">
 
        <div class="box sb1">Hover over cards</div>
-  <h1 class="kop">SKILLS</h1>
+  <h1 class="kop animate__animated animate__backInDown">SKILLS</h1>
   
   <div class="container">
     <div class="row">

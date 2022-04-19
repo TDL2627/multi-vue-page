@@ -6,7 +6,7 @@
   <div class="circle circle-2"></div>
 </div>
 </div>
-             <h1>Contact me</h1>
+             <h1 class="animate__animated animate__backInDown">Contact me</h1>
        <div class="box sb1">Message me</div>
        <div class="container">
 

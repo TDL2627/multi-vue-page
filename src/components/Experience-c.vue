@@ -1,7 +1,7 @@
 <template>
   
 <div id="exp">
-<h1 class="kop">EXPERIENCE</h1>
+<h1 class="kop animate__animated animate__backInDown">EXPERIENCE</h1>
 
   <section class="time-line-box">
             <div class="swiper-container text-center"> 

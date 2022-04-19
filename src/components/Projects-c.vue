@@ -6,7 +6,7 @@
   <div class="circle circle-2"></div>
 </div>
 </div>
-    <h1 class="kop">PROJECTS</h1>
+    <h1 class="kop animate__animated animate__backInDown">PROJECTS</h1>
            <div class="box sb1">Browse left and right(refresh if nothing shows)</div>
 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">

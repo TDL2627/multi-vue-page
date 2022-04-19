@@ -7,7 +7,7 @@
 </div>
 </div>
 
- <h1 class="kop">TESTIMONIALS</h1>
+ <h1 class="kop animate__animated animate__backInDown">TESTIMONIALS</h1>
    <div class="box sb1">Scroll down</div>
   <div class="container">
     <div class="row">
