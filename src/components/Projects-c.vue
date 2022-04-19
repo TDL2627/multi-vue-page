@@ -24,7 +24,7 @@
     </div>
     <div class="carousel-item" v-for="(project,index) in projects" :key="project.title">
     <img :src="require('@/assets/project/'+ project.img)" class="project-image">
-     <p class="iden">{{index+2}}/26</p>
+     <p class="iden">{{index+2}}/28</p>
       <div class="content">
         <h2 class="project-title">
           {{ project.title }}
