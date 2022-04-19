@@ -12,7 +12,7 @@
   <div class="carousel-inner">
     <div class="carousel-item active">
       <img src="../assets/project/riddle.png" class="project-image" alt="image">
-<p class="iden">1/26</p>
+<p class="iden">1/28</p>
       <h2>Riddle Game</h2>
       <h4>Moderate</h4>
       <p>A riddle quiz game made with VUEjs.</p>
