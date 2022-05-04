@@ -123,7 +123,7 @@ p{
 }
 #contact{
       background:linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../assets/bg.png");
-     height: 100vh;
+     height: 100vh ;
   
      padding-top: 7%;
 }
@@ -249,14 +249,7 @@ input,textarea{
   width: 250px;
 }
 }
-@media only screen and (min-height: 700px) {
-#contact{
-      background:linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../assets/bg.png");
-     height: max-content;
-   
-    
-}
-}
+
 
 /* animation */
 @keyframes hide {
